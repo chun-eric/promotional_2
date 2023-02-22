@@ -97,26 +97,125 @@
       }
 
       @media screen and (max-width: 599.98px) {
-        .two-columns .padding {
-          padding-right: 0 !important;
-          padding-left: 0 !important;
-        }
-        .two-columns .content img {
-          width: 300px !important;
-          max-width: 300px !important;
-        }
+      .three-columns .padding {
+        padding-right: 7px !important;
+        padding-left: 7px !important;
+        padding-top: 25px !important;
+      
       }
 
-      @media screen and (max-width: 399.98px) {
-        .two-columns .padding {
-          padding-right: 0 !important;
-          padding-left: 0 !important;
-        }
-        .two-columns .content img {
-          width: 300px !important;
-          max-width: 300px !important;
-        }
+      .one-column .padding {
+        padding: 30px !important;
+        width: 80% !important;
+  
       }
+
+      .two-column .padding {
+        align-items: center !important;
+        text-align: center !important;
+        padding: 30px !important;
+        width: 80% !important;
+      }
+
+      .eighty-width {
+        width: 80% !important;
+        min-width: 60% !important;
+        max-width: 80% !important;
+        border: none !important;
+      }
+
+      .none-two {
+        width: 3px !important;
+        height: 3px !important;
+      }
+
+      .full-width {
+        width: 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      .full-block {
+        display: block !important;
+        text-align: center !important; 
+        align-items: center !important;
+      }
+
+       img.coupon-resize {
+        width: 540px !important;
+        height: 100% !important;
+        max-width: 540px !important;
+        margin: 0 auto !important;
+      } 
+
+      img.content  {
+        width: 280px !important;
+        height: 100% !important;
+        max-width: 300px !important;
+        margin: 0 auto !important;
+        
+      }
+
+      .none {
+        display: none !important;
+      }
+      
+    } 
+
+
+
+    @media screen and (max-width: 399.98px) {
+      .three-columns .padding {
+        padding-right: 7px !important;
+        padding-left: 7px !important;
+        padding-top: 25px !important;
+      
+      }
+
+      .one-column .padding {
+        /* padding: 30px !important;
+        width: 60% !important; */
+      }
+
+      .eighty-width {
+        width: 80% !important;
+        min-width: 60% !important;
+        max-width: 80% !important;
+        border: none !important;
+      }
+
+      .full-width {
+        width: 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      .full-block {
+        display: block !important;
+        text-align: center !important; 
+        align-items: center !important;
+      }
+
+       img.coupon-resize {
+        width: 480px !important;
+        height: 100% !important;
+        max-width: 480px !important;
+        margin: 0 auto !important;
+      } 
+
+      img.content  {
+        width: 280px !important;
+        height: 100% !important;
+        max-width: 300px !important;
+        margin: 0 auto !important;
+        
+      }
+
+      .none {
+        display: none !important;
+      }
+    }
+
 
       @media (prefers-color-scheme: dark) {
       }
@@ -464,18 +563,19 @@
     <!-- START OF 2 COLUMN SHOES -->
     <tr>
       <td align="center">
-        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="80%">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="500px">
           <tbody>
             <tr>
 
-              <td style=" text-align: center; align-items: center;" width="230px">
+              <td style=" text-align: center; align-items: center;" width="250px">
                 <img src="https://i.ibb.co/XWNJFr0/red-shoes-1-resized.jpg" alt="red-shoes-1-resized" border="0"
-                  style="display: block; position: relative; text-align: center; align-items: center; " width="230px" height="275px">
+                  style="display: block; position: relative; text-align: center; align-items: center; " width="250px" height="275px">
                 </img>
               </td>
 
+              <td class="none-two" width="5px">&nbsp;</td>
           
-              <td width="230px" align="left" style="background-color: rgb(219, 92, 92); padding-left: 15px; padding-right: 10px; color: white; padding-bottom: 10px"> 
+              <td width="245px" align="left" style="background-color: rgb(219, 92, 92); padding: 15px; color: white; "> 
                 <p style="font-size: 22px; font-family: 'Montserrat'; font-weight: 500; letter-spacing: 2px;">Kitten Heels</p>
                 <p style="letter-spacing: 1px; font-weight: 400; line-height: 23px; text-align: left; padding-top: 2px; font-size: 15px; word-wrap: break-word; color: white; padding-bottom: 7px;">Feminine and chic. Perfect for any occasion, these heels are designed for both comfort and fashion.</p>
                 <p style="text-transform: uppercase; padding-top: 10px; margin-top: 10px; ">
@@ -492,15 +592,29 @@
     </tr>
     <!-- END OF 2COLUMN SHOES -->
 
+  <!-- WHITE SPACE -->
+  <tr>
+    <td>
+      <table>
+        <tbody>
+          <tr>
+            <td class="none-two" width="10px" height="3px">&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  <!-- WHITE SPACE -->
+
     <!-- START OF 2 COLUMN BAG -->
     <tr>
       <td align="center">
-        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="80%">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="500px">
           <tbody>
             <tr>
-              <td width="217px" align="left" style="background-color: rgb(72, 165, 145); padding-left: 15px;  color: white; padding-bottom: 10px"> 
+              <td width="245px" align="left" style="background-color: rgb(72, 165, 145); padding: 15px;  color: white; "> 
                 <p style="font-size: 22px; font-family: 'Montserrat'; font-weight: 500; letter-spacing: 2px;">Helene Handbag</p>
-                <p style="letter-spacing: 1px; font-weight: 400; line-height: 23px; text-align: left; padding-right: 2px; padding-top: 2px; font-size: 15px; word-wrap: break-word; color: white; padding-bottom: 7px;">Feminine and chic. Perfect for any occasion, these heels are designed for both comfort and fashion.</p>
+                <p style="letter-spacing: 1px; font-weight: 400; line-height: 23px; text-align: left;  padding-top: 2px; font-size: 15px; word-wrap: break-word; color: white; padding-bottom: 7px;">The perfect choice for you to add a touch of sophistication to your wardrobe</p>
                 <p style="text-transform: uppercase; padding-top: 10px; margin-top: 10px; ">
                   <a href="#" target="_blank" style="color: white; letter-spacing: 2px; font-family: 'Lato'; border: 1px solid white; padding: 7px; ">
                     Shop Now
@@ -508,9 +622,11 @@
                 </p>  
               </td>
 
-              <td align=" center" width="240px">
+              <td class="none" width="5px">&nbsp;</td>
+
+              <td align=" center" style=" text-align: center; align-items: center;" width="245px">
                 <img src="https://i.ibb.co/pntQQN9/handbag-1-resized.jpg" alt="handbag-1-resized" border="0"
-                  style="display: block; text-align: center; align-items: center;  " width="250px" height="275px">
+                  style="display: block; text-align: center; align-items: center;" width="245px" height="289px">
                 </img>
               </td>
 
@@ -521,64 +637,96 @@
     </tr>
     <!-- END OF 2COLUMN BAG -->
 
-    <!-- START OF 2 COLUMN DRESS -->
+  <!-- WHITE SPACE -->
+  <tr>
+    <td>
+      <table>
+        <tbody>
+          <tr>
+            <td class="none-two" width="10px" height="3px">&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+  <!-- WHITE SPACE -->
+
+  <!-- START OF 2 CLUTCH BAG -->
     <tr>
       <td align="center">
-        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="80%">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="500px">
           <tbody>
             <tr>
 
-              <td style=" text-align: center; align-items: center;" width="230px">
-                <img src="https://i.ibb.co/bJVgVfd/dress-2-resized.jpg" alt="dress-2-resized" border="0" 
-                  style="display: block; position: relative; text-align: center; align-items: center; " width="230px" height="240px">
+              <td class="padding three-columns full-block full-width" style=" text-align: center; align-items: center;" width="250px">
+                <img src="https://i.ibb.co/Pr266dP/handbag-2-resized.jpg" alt="handbag-2-resized" border="0"
+                  style="display: block; position: relative; text-align: center; align-items: center; " width="250px" height="270px">
                 </img>
               </td>
+
+              <td class="none" width="3px">&nbsp;</td>
           
-              <td width="230px" align="left" style="background-color: rgb(129, 52, 173); padding-left: 15px; padding-right: 10px; color: white; padding-bottom: 10px"> 
-                <p style="font-size: 22px; font-family: 'Montserrat'; font-weight: 500; letter-spacing: 2px;">Knitted Dress</p>
-                <p style="letter-spacing: 1px; font-weight: 400; line-height: 23px; text-align: left; padding-top: 2px; font-size: 15px; word-wrap: break-word; color: white; padding-bottom: 7px;">Feminine and chic. Perfect for any occasion, these heels are designed for both comfort and fashion.</p>
-                <p style="text-transform: uppercase; padding-top: 10px; margin-top: 10px; ">
-                  <a href="#" target="_blank" style="color: white; letter-spacing: 2px; font-family: 'Lato'; border: 1px solid white; padding: 7px; ">
-                    Shop Now
-                  </a>
-                </p>
-              </td> 
-            </tr>
-          </tbody>
-        </table>
-      </td>
-    </tr>
-    <!-- END OF 2COLUMN DRESS -->
-
-
-    <!-- START OF 2 COLUMN CLUTCH BAG -->
-    <tr>
-      <td align="center">
-        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="80%">
-          <tbody>
-            <tr>
-
-              <td width="217px" align="left" style="background-color: rgb(243, 152, 33); padding-left: 13px;  color: white; padding-bottom: 10px; padding-right: 2px;"> 
+              <td class="padding three-columns full-block full-width" width="245px" align="left" style="background-color: rgb(243, 152, 33); padding: 15px; color: white; "> 
                 <p style="font-size: 22px; font-family: 'Montserrat'; font-weight: 500; letter-spacing: 2px;">Clutch Bag</p>
-                <p style="letter-spacing: 1px; font-weight: 400; line-height: 23px; text-align: left; padding-right: 2px; padding-top: 2px; font-size: 15px; word-wrap: break-word; color: white; padding-bottom: 7px;">Feminine and chic. Perfect for any occasion, these heels are designed for both comfort and fashion.</p>
+                <p style="letter-spacing: 1px; font-weight: 400; line-height: 23px; text-align: left; padding-top: 2px; font-size: 15px; word-wrap: break-word; color: white; padding-bottom: 7px;">Make a bold fashion statement with this gorgeous clutch bag.</p>
                 <p style="text-transform: uppercase; padding-top: 10px; margin-top: 10px; ">
                   <a href="#" target="_blank" style="color: white; letter-spacing: 2px; font-family: 'Lato'; border: 1px solid white; padding: 7px; ">
                     Shop Now
                   </a>
                 </p>
+                
               </td>
-
-              <td align=" center" width="240px">
-                <img src="https://i.ibb.co/Pr266dP/handbag-2-resized.jpg" alt="handbag-2-resized" border="0" style="display: block; text-align: center; align-items: center; " width="250px" height="265px">
-                </img>
-              </td>
-
             </tr>
           </tbody>
         </table>
       </td>
     </tr>
     <!-- END OF 2 COLUMN CLUTCH BAG -->
+
+      <!-- WHITE SPACE -->
+      <tr>
+        <td>
+          <table>
+            <tbody>
+              <tr>
+                <td class="none-two" width="10px" height="3px">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+  <!-- WHITE SPACE -->
+
+    <!-- START OF 2 COLUMN KNITTED DRESS -->
+    <tr>
+      <td align="center">
+        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="500px">
+          <tbody>
+            <tr>
+              <td width="245px" align="left" style="background-color: rgb(129, 52, 173); padding: 15px;  color: white; "> 
+                <p style="font-size: 22px; font-family: 'Montserrat'; font-weight: 500; letter-spacing: 2px;">Knitted Dress</p>
+                <p style="letter-spacing: 1px; font-weight: 400; line-height: 23px; text-align: left;  padding-top: 2px; font-size: 15px; word-wrap: break-word; color: white; padding-bottom: 7px;">Soft and comfortable fabric hugs your curves in all the right places.</p>
+                <p style="text-transform: uppercase; padding-top: 10px; margin-top: 10px; ">
+                  <a href="#" target="_blank" style="color: white; letter-spacing: 2px; font-family: 'Lato'; border: 1px solid white; padding: 7px; ">
+                    Shop Now
+                  </a>
+                </p>  
+              </td>
+
+              <td class="" width="5px">&nbsp;</td>
+
+              <td align=" center" style=" text-align: center; align-items: center;" width="245px">
+                <img src="https://i.ibb.co/bJVgVfd/dress-2-resized.jpg" alt="dress-2-resized" border="0"
+                  style="display: block; text-align: center; align-items: center;" width="245px" height="270px">
+                </img>
+              </td>
+
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <!-- END OF 2 COLUMN KNITTED DRESS -->
 
     
 
@@ -634,7 +782,7 @@
 
 <!-- START OF OTHER COLLECTIONS   -->
 <tr>
-  <td align="center">
+  <td align="center" >
     <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
       <tbody>
         <tr>
@@ -643,22 +791,22 @@
             <table style="margin: 0 auto; ">
               <tbody>
                 <tr>
-                  <td class="padding" >
+                  <td class="padding three-columns full-block full-width" >
                     <a href="#">
-                      <img src="https://i.ibb.co/5MsvpcY/resized-1.jpg" alt="resized-1" border="0" 
-                      border="0"width="150px" height="260px" style="border-radius: 3px;  "/>
+                      <img class="content" src="https://i.ibb.co/5MsvpcY/resized-1.jpg" alt="resized-1" border="0" 
+                      border="0"width="150px" height="260px" style="border-radius: 3px; display: inline-block;  "/>
                     </a>
                   </td>
-                  <td width="10px"></td>
-                  <td class="padding" >
+                  <td class="none" width="10px"></td>
+                  <td class="padding three-columns full-block full-width" >
                     <a href="#">
-                      <img src="https://i.ibb.co/ZX6vz4t/resized-2.jpg" alt="resized-2" border="0"width="150px" height="260px" style=" border-radius: 3px;"/>
+                      <img class="content" src="https://i.ibb.co/ZX6vz4t/resized-2.jpg" alt="resized-2" border="0" width="150px" height="260px" style="display: inline-block; border-radius: 3px;"/>
                     </a>
                   </td>
-                  <td width="10px"></td>
-                  <td class="padding">
+                  <td class="none" width="10px"></td>
+                  <td class="padding three-columns full-block full-width">
                     <a href="#">
-                      <img src="https://i.ibb.co/xMFzH7N/resized-3.jpg" alt="resized-3" border="0"width="150px" height="260px" style=" border-radius: 3px; "/>
+                      <img class="content" src="https://i.ibb.co/xMFzH7N/resized-3.jpg" alt="resized-3" border="0"  width="150px" height="260px" style=" border-radius: 3px;display: inline-block;  "/>
                     </a>
                   </td>
                 </tr>
@@ -694,14 +842,14 @@
         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
           <tbody>
             <tr>
-              <td class="one-columns" width="100%" style="align-items: center; padding: 0; text-align: center; border: 10px solid rgb(0, 0, 0); ">
+              <td class="one-column padding eighty-width " width="100%" style="align-items: center; padding: 0; text-align: center; border: 10px solid rgb(0, 0, 0); ">
                 
                 <table style="margin: 0 auto; " align="center">
                   <tbody>
                     <tr>
-                      <td class="padding" style="position: relative;" align="center">
+                      <td  class="" style="position: relative;" align="center">
                         <a href="#">
-                          <img src="https://i.ibb.co/gzX1RKN/coupon-bg-resized.jpg" alt="coupon-bg-resized" border="0"width="480px" height="460px" >
+                          <img class="coupon-resize" src="https://i.ibb.co/gzX1RKN/coupon-bg-resized.jpg" alt="coupon-bg-resized" border="0"width="480px" height="460px" >
                           <p style="position: absolute; top: 60px; left: 120px; color: white; margin: 0 auto; z-index: 10; font-size: 20px; font-family: 'Serif'; text-align: center; align-items: center; font-weight: 500; letter-spacing: 1px; font-style: italic;"> -- last chance to order for -- </p>
                           <p style="position: absolute; top: 100px; left: 35px; color: rgb(255, 255, 255); margin: 0 auto; z-index: 10; font-size: 10px; font-family: 'Serif'; text-align: center; align-items: center; font-weight: 400; letter-spacing: 1px; font-style: italic; word-wrap: break-word;">Discount applied to the highest value item at checkout. Only one promo per order. </p>
                         <p style="position: absolute; top: 115px; left: 160px; color: rgb(255, 255, 255); margin: 0 auto; z-index: 10; font-size: 10px; font-family: 'Serif'; text-align: center; align-items: center; font-weight: 400; letter-spacing: 1px; font-style: italic; word-wrap: break-word;">Expires tonight at midnight PST. </p>
