@@ -105,15 +105,16 @@
       }
 
       .one-column .padding {
+        padding-top: 10px !important;
         padding: 30px !important;
         width: 80% !important;
   
       }
 
-      .two-column .padding {
+      .two-columns .padding {
         align-items: center !important;
         text-align: center !important;
-           padding: 30px !important;
+        padding: 30px !important;
       }
 
       .eighty-width {
@@ -124,8 +125,7 @@
       }
 
       .none-two {
-        width: 3px !important;
-        height: 3px !important;
+        display: none !important; 
       }
 
       .full-width {
@@ -134,27 +134,58 @@
         max-width: 100% !important;
       }
 
+      .full-280 {
+        margin: 0 auto !important;
+        margin-top: 5px !important;
+        margin-bottom: 10px !important;
+        align-items: center !important;
+        text-align: center !important;
+        width: 380px !important;
+        min-width: 240px !important;
+        max-width: 380px !important;
+      }
+
       .full-block {
         display: block !important;
         text-align: center !important; 
         align-items: center !important;
       }
 
+      p.product-item {
+        font-size: 25px !important;
+        margin-top: 5px !important;
+        margin-bottom: 3px !important;
+      }
+
+
+      p.align-text {
+        text-align: center !important;
+        align-items: center !important;
+        font-size: 18px !important;
+        margin-bottom: 25px !important;
+        width: 380px !important;
+      }
+
        img.coupon-resize {
         width: 540px !important;
         height: 100% !important;
+        min-width: 360px !important;
         max-width: 540px !important;
         margin: 0 auto !important;
+        align-items: center !important;
       } 
 
       img.content  {
+        padding-top: 10px !important;
+        margin-bottom: 3px !important;
         width: 280px !important;
         height: 100% !important;
-        max-width: 300px !important;
+        max-width: 360px !important;
         margin: 0 auto !important;
         
       }
 
+    
       .none {
         display: none !important;
       }
@@ -566,23 +597,22 @@
           <tbody>
             <tr>
 
-              <td style=" text-align: center; align-items: center;" width="250px">
-                <img src="https://i.ibb.co/XWNJFr0/red-shoes-1-resized.jpg" alt="red-shoes-1-resized" border="0"
+              <td class="one-column padding full-width full-block" style=" text-align: center; align-items: center;" width="250px">
+                <img class="content" src="https://i.ibb.co/XWNJFr0/red-shoes-1-resized.jpg" alt="red-shoes-1-resized" border="0"
                   style="display: block; position: relative; text-align: center; align-items: center; " width="250px" height="275px">
                 </img>
               </td>
 
               <td class="none-two" width="5px">&nbsp;</td>
           
-              <td width="245px" align="left" style="background-color: rgb(219, 92, 92); padding: 15px; color: white; "> 
-                <p style="font-size: 22px; font-family: 'Montserrat'; font-weight: 500; letter-spacing: 2px;">Kitten Heels</p>
-                <p style="letter-spacing: 1px; font-weight: 400; line-height: 23px; text-align: left; padding-top: 2px; font-size: 15px; word-wrap: break-word; color: white; padding-bottom: 7px;">Feminine and chic. Perfect for any occasion, these heels are designed for both comfort and fashion.</p>
+              <td class="one-column padding full-280 full-block" width="245px" align="left" style="padding: 15px; color: black;"> 
+                <p class="product-item" style="font-size: 22px; font-family: 'Montserrat'; font-weight: 500; letter-spacing: 2px; color: black; background-color: white; ">Kitten Heels</p>
+                <p class="align-text" style="letter-spacing: 1px; font-weight: 400; line-height: 23px; text-align: left; padding-top: 2px; font-size: 15px; word-wrap: break-word; color: black; padding-bottom: 7px;">Feminine and chic. Perfect for any occasion, these heels are designed for both comfort and fashion.</p>
                 <p style="text-transform: uppercase; padding-top: 10px; margin-top: 10px; ">
-                  <a href="#" target="_blank" style="color: white; letter-spacing: 2px; font-family: 'Lato'; border: 1px solid white; padding: 7px; ">
+                  <a href="#" target="_blank" style="color: white; letter-spacing: 2px; font-family: 'Playfair Display', serif; border: 1px solid rgb(19, 9, 9); padding: 12px; font-size: 16px; background-color: rgb(34, 20, 20);border-radius: 2px; cursor: pointer; ">
                     Shop Now
                   </a>
-                </p>
-                
+                </p>  
               </td>
             </tr>
           </tbody>
@@ -611,22 +641,23 @@
         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="500px">
           <tbody>
             <tr>
-              <td width="245px" align="left" style="background-color: rgb(72, 165, 145); padding: 15px;  color: white; "> 
-                <p style="font-size: 22px; font-family: 'Montserrat'; font-weight: 500; letter-spacing: 2px;">Helene Handbag</p>
-                <p style="letter-spacing: 1px; font-weight: 400; line-height: 23px; text-align: left;  padding-top: 2px; font-size: 15px; word-wrap: break-word; color: white; padding-bottom: 7px;">The perfect choice for you to add a touch of sophistication to your wardrobe</p>
+
+              <td class="one-column padding full-width full-block" align=" center" style=" text-align: center; align-items: center;" width="250px">
+                <img  class="content" src="https://i.ibb.co/pntQQN9/handbag-1-resized.jpg" alt="handbag-1-resized" border="0"
+                  style="display: block; text-align: center; align-items: center;" width="250px" height="289px">
+                </img>
+              </td>
+
+              <td class="none-two" width="5px">&nbsp;</td>
+              
+              <td class="one-column padding full-280 full-block" width="245px" align="left" style="padding: 15px; color: black;"> 
+                <p class="product-item" style="font-size: 22px; font-family: 'Montserrat'; font-weight: 500; letter-spacing: 2px; color: black; background-color: white; ">Helene Handbag</p>
+                <p class="align-text" style="letter-spacing: 1px; font-weight: 400; line-height: 23px; text-align: left; padding-top: 2px; font-size: 15px; word-wrap: break-word; color: black; padding-bottom: 7px;">The perfect choice for you to add a touch of sophistication to your wardrobe.</p>
                 <p style="text-transform: uppercase; padding-top: 10px; margin-top: 10px; ">
-                  <a href="#" target="_blank" style="color: white; letter-spacing: 2px; font-family: 'Lato'; border: 1px solid white; padding: 7px; ">
+                  <a href="#" target="_blank" style="color: white; letter-spacing: 2px; font-family: 'Playfair Display', serif; border: 1px solid rgb(19, 9, 9); padding: 12px; font-size: 16px; background-color: rgb(34, 20, 20);border-radius: 2px; cursor: pointer; ">
                     Shop Now
                   </a>
                 </p>  
-              </td>
-
-              <td class="none" width="5px">&nbsp;</td>
-
-              <td align=" center" style=" text-align: center; align-items: center;" width="245px">
-                <img src="https://i.ibb.co/pntQQN9/handbag-1-resized.jpg" alt="handbag-1-resized" border="0"
-                  style="display: block; text-align: center; align-items: center;" width="245px" height="289px">
-                </img>
               </td>
 
             </tr>
@@ -657,23 +688,22 @@
           <tbody>
             <tr>
 
-              <td class="padding three-columns full-block full-width" style=" text-align: center; align-items: center;" width="250px">
-                <img src="https://i.ibb.co/Pr266dP/handbag-2-resized.jpg" alt="handbag-2-resized" border="0"
+              <td class="one-column padding full-width full-block" style=" text-align: center; align-items: center;" width="250px">
+                <img class="content" src="https://i.ibb.co/Pr266dP/handbag-2-resized.jpg" alt="handbag-2-resized" border="0"
                   style="display: block; position: relative; text-align: center; align-items: center; " width="250px" height="270px">
                 </img>
               </td>
 
-              <td class="none" width="3px">&nbsp;</td>
+              <td class="none" width="5px">&nbsp;</td>
           
-              <td class="padding three-columns full-block full-width" width="245px" align="left" style="background-color: rgb(243, 152, 33); padding: 15px; color: white; "> 
-                <p style="font-size: 22px; font-family: 'Montserrat'; font-weight: 500; letter-spacing: 2px;">Clutch Bag</p>
-                <p style="letter-spacing: 1px; font-weight: 400; line-height: 23px; text-align: left; padding-top: 2px; font-size: 15px; word-wrap: break-word; color: white; padding-bottom: 7px;">Make a bold fashion statement with this gorgeous clutch bag.</p>
+              <td class="one-column padding full-280 full-block" width="245px" align="left" style="padding: 15px; color: black;"> 
+                <p class="product-item" style="font-size: 22px; font-family: 'Montserrat'; font-weight: 500; letter-spacing: 2px; color: black; background-color: white; ">Clutch Bag</p>
+                <p class="align-text" style="letter-spacing: 1px; font-weight: 400; line-height: 23px; text-align: left; padding-top: 2px; font-size: 15px; word-wrap: break-word; color: black; padding-bottom: 7px;">Make a bold fashion statement with this gorgeous clutch bag.</p>
                 <p style="text-transform: uppercase; padding-top: 10px; margin-top: 10px; ">
-                  <a href="#" target="_blank" style="color: white; letter-spacing: 2px; font-family: 'Lato'; border: 1px solid white; padding: 7px; ">
+                  <a href="#" target="_blank" style="color: white; letter-spacing: 2px; font-family: 'Playfair Display', serif; border: 1px solid rgb(19, 9, 9); padding: 14px; font-size: 16px; background-color: rgb(34, 20, 20);border-radius: 2px; cursor: pointer; ">
                     Shop Now
                   </a>
-                </p>
-                
+                </p>  
               </td>
             </tr>
           </tbody>
@@ -702,22 +732,25 @@
         <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="500px">
           <tbody>
             <tr>
-              <td width="245px" align="left" style="background-color: rgb(129, 52, 173); padding: 15px;  color: white; "> 
-                <p style="font-size: 22px; font-family: 'Montserrat'; font-weight: 500; letter-spacing: 2px;">Knitted Dress</p>
-                <p style="letter-spacing: 1px; font-weight: 400; line-height: 23px; text-align: left;  padding-top: 2px; font-size: 15px; word-wrap: break-word; color: white; padding-bottom: 7px;">Soft and comfortable fabric hugs your curves in all the right places.</p>
+            
+
+              <td class="one-column padding full-280 full-block" align=" center" style=" text-align: center; align-items: center;" width="245px">
+                <img class="content" src="https://i.ibb.co/bJVgVfd/dress-2-resized.jpg" alt="dress-2-resized" border="0"
+                  style="display: block; text-align: center; align-items: center;" width="250px" height="270px">
+                </img>
+              </td>
+
+              <td class="none" width="5px">&nbsp;</td>
+
+
+              <td class="one-column padding full-280 full-block" width="245px" align="left" style="padding: 15px; color: black;"> 
+                <p class="product-item" style="font-size: 22px; font-family: 'Montserrat'; font-weight: 500; letter-spacing: 2px; color: black; background-color: white; ">Knitted Dress</p>
+                <p class="align-text" style="letter-spacing: 1px; font-weight: 400; line-height: 23px; text-align: left; padding-top: 2px; font-size: 15px; word-wrap: break-word; color: black; padding-bottom: 7px;">Soft and comfortable fabric hugs your curves in all the right places.</p>
                 <p style="text-transform: uppercase; padding-top: 10px; margin-top: 10px; ">
-                  <a href="#" target="_blank" style="color: white; letter-spacing: 2px; font-family: 'Lato'; border: 1px solid white; padding: 7px; ">
+                  <a href="#" target="_blank" style="color: white; letter-spacing: 2px; font-family: 'Playfair Display', serif; border: 1px solid rgb(19, 9, 9); padding: 14px; font-size: 16px; background-color: rgb(34, 20, 20);border-radius: 2px; cursor: pointer; ">
                     Shop Now
                   </a>
                 </p>  
-              </td>
-
-              <td class="" width="5px">&nbsp;</td>
-
-              <td align=" center" style=" text-align: center; align-items: center;" width="245px">
-                <img src="https://i.ibb.co/bJVgVfd/dress-2-resized.jpg" alt="dress-2-resized" border="0"
-                  style="display: block; text-align: center; align-items: center;" width="245px" height="270px">
-                </img>
               </td>
 
             </tr>
