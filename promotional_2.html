@@ -134,7 +134,18 @@
               color: #ffffff!important;
               border: none !important;
             }             	 
-          
+            
+            a {
+              color: #fff !important;
+            }
+            
+            .spacer {
+                  background: #333 !important;
+            }
+            .line {
+               color:#F7F8F9 !important;
+            background: #F7F8F9 !important;
+            }
     <![endif]-->  */
             
             
@@ -196,8 +207,9 @@
            }
           
            a {
-             background: transparent !important;
+            /*  background: transparent !important; */
               /* background: #4e4e4e !important; */
+             color: #fff !important;
 
           
             }
@@ -207,8 +219,8 @@
             }
             
             .line {
-            color:#F7F8F9 !important;
-    				background: #F7F8F9 !important;
+            color:#fff !important;
+    				background: #fff !important;
            
            }
             
@@ -240,13 +252,20 @@
            .darkmode-transparent {
               background-color: transparent!important;
           }
+            .darkmode-button {
+              background-color: #8a8383 !important;
+            }
+            .two-col.darkmode-background {
+              background-color: #333 !important;
+            }
         }
 
         
         
         @media (max-width: 350px) {
           .three-col .column {
-            max-width: 100% !important;
+             max-width: 92% !important;
+               padding-top: 20px !important;
           }
           
           h1 {
@@ -265,26 +284,25 @@
           
            .two-col .column {
             max-width: 100% !important;
+             padding-bottom: 20px !important;
+             
           }
-     
-       		.column-info.right-column {
-            	text-align: center !important;
-            }
-
-        	.two-col .column .left-column {
-            display: block !important;
-            text-align: center !important;
-            margin: 0 auto !important;
-        } 
-          
-         .two-col .column .right-column h2 {
-            display: block !important;
-            width: 330px !important;
-            max-width: 100% !important;
-        }
-          
+          .column.footer-left {
+                   width: 100% !important;
+            height: auto !important;
+       
+          }
+          .column.footer-right {
+                   width: 100% !important;
+              height: auto !important;
+       
+          }
+            	   
+          .column .border-none {
+            border-right-style: none !important;
+          }
         
-           	
+            	
       }
         
   
@@ -292,11 +310,13 @@
       
         @media (min-width: 350px) and (max-width: 460px) {
           .three-col .column {
-            max-width: 50% !important;
+            max-width: 92% !important;
+            padding-top: 20px !important;
           }
           .two-col .column {
-            
             max-width: 100% !important;
+            padding-bottom: 20px !important;
+               padding-top: 10px !important;
           }
           
           h1 {
@@ -312,31 +332,25 @@
              margin-left: 3px !important;
             margin-right: 3px !important;
           }
-          
-    		 .two-col .column .right-column {
-            max-width: 100% !important;
-            display: block !important;
-            text-align: center !important;
-            margin: 0 auto !important;
-            }
 
-        .two-col .column .left-column {
-            max-width: 100% !important;
-            display: block !important;
-            text-align: center !important;
-            margin: 0 auto !important;
-        } 
-          
          .two-col .column img {
           	width: 100% !important;
            	height: auto !important;
            	max-width: 100% !important;
            } 
+                 .column.footer-left {
+             width: 100% !important;
+                        height: auto !important;
+          }
+          .column.footer-right {
+             width: 100% !important;
+                  height: auto !important;
+        
+          }
+            	
           
-          .two-col .column-info.right-column h2 {
-            display: block !important;
-            width: 440px !important;
-            max-width: 100% !important;
+          .column .border-none {
+            border-right-style: none !important;
           }
         
       }
@@ -347,7 +361,7 @@
         
         @media (min-width: 460px) {
           .three-col .column {
-            max-width: 33.3% !important;
+            max-width:50% !important;
           }
           .two-col .column {
             width: 50% !important;
@@ -368,35 +382,24 @@
             margin-right: 13px !important;
           }
           
-       		.two-col .column-info.right-column {
-            text-align: right !important;
-          }
-          
-          .two-col .column .left-column {
-            text-align: left !important;
-          }
+    
           
           
           
           
           @media (min-width: 460px) and (max-width: 600px) {
-            .two-col .column .right-column {
-            text-align: right !important;
+       .three-col .column {
+            max-width: 50% !important;
           }
-           .two-col .column .left-column {
-            text-align: left !important;
-          }
+          
+            .two-col .column {
+            width: 50% !important;
             
+          }
           }
           
           @media (min-width: 600px) and (max-width: 1200px) {
-            .two-col .column .right-column {
-            text-align: right !important;
-          }
-          
-          .two-col .column .left-column {
-            text-align: left !important;
-          } 
+        
           }
           
       
@@ -425,9 +428,6 @@
                       <div class="outer" style="width:96%; max-width: 600px; margin:20px auto;background-color:#ffffff; ">
                         
 
-                      <!-- white space break -->
-                      <!-- <div class="spacer" style="line-height: 10px; height: 2px; mso-line-height-rule: exactly;">&nbsp;</div> -->
-
 
 
                       <!-- Single Column Header Logo -->
@@ -442,9 +442,9 @@
 
                         
                       <!-- horizontal line break v3 -->  
-                      <table width="80%" border="0" cellpadding="0" cellspacing="0" align="center"  style="margin:0 auto;">
+                      <table  border="0" cellpadding="0" cellspacing="0" align="center"  style="margin:0 auto;">
                       <tr>
-                        <td class="line" style="line-height: 1px;font-size:20px;border-bottom: 1px solid #240A0A;" height="1"> </td>
+                        <td  class="line" style="line-height: 1px;font-size:20px;border-bottom: 1px solid #240A0A;" height="1" width="540"> </td>
                       </tr>
                         <!--<tr>
                         <td style="line-height: 20px;font-size:20px;" height="20"> </td>
@@ -452,93 +452,19 @@
                     </table>
 
 
-                      <!-- Single Column Header -->
-                      <!-- <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="80%">
-                        <tr>
-                          <td align="center"  ">
-                            <p style="font-family: 'Playfair Display'; text-decoration: none; font-size: 15px;">
-                              <a href="" style="text-decoration: none;">DRESSES</a>
-                            </p>
-                          </td>
-                          <td align="center" >
-                            <p style="font-family: 'Playfair Display'; text-decoration: none; font-size: 15px;">
-                              <a href="">COATS</a>
-                            </p>
-                          </td>
-                          <td align="center" >
-                            <p style="font-family: 'Playfair Display'; text-decoration: none; font-size: 15px;">
-                              <a href="">BAGS</a>
-                            </p>
-                          </td>
-                          <td align="center" >
-                            <p style="font-family: 'Playfair Display'; text-decoration: none; font-size: 15px;">
-                              <a href="">SHOES</a>
-                            </p>
-                          </td>
-                        </tr>
-                      </table> -->
-
-                    
-                    <!-- horizontal line break v3 -->  
-                    <!-- <table width="80%" border="0" cellpadding="0" cellspacing="0" align="center"  style="margin:0 auto;">
-                      <tr>
-                        <td class="line" style="line-height: 1px;font-size:20px;border-bottom: 1px solid #240A0A;" > </td>
-                      </tr>
-                       
-                    </table> -->
-
-
-                        
-                     <!-- white space break -->
-                    <!-- <div class="spacer" style="line-height: 5px; height: 40px; mso-line-height-rule: exactly;">&nbsp;</div> -->
-                        
-                        
-                    <!-- Single Column Promo Text -->
-                    <!-- <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                      <tr>
-                        <td width="480px" style="align-items: center; padding:0; text-align: center;">
-                          <p style="font-family: 'Playfair'; color: black; font-weight: 400; padding: 0px; margin: 0px; letter-spacing: 3px; font-size: 20px; font-weight: 500; margin-top: 10px; margin-bottom: 5px">EXCLUSIVE OFFER
-                          </p>
-                        </td>
-                      </tr>
-                    </table> -->
-
-
-                    <!-- white space break -->
-                    <!-- <div class="spacer" style="line-height: 5px; height: 35px; mso-line-height-rule: exactly;">&nbsp;</div> -->
-
-                        
-
-                    <!-- Single Column Promo Box -->
-                    <!-- <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation">
-                      <tr>
-                        <td width="600" style="align-items: center; padding:0; text-align: center;background-color: rgb(245, 245, 245); padding: 0px; margin: 0px;">
-                          <a href="#" target="_blank">
-                            <p style="font-family: serif; color: black; font-weight: 400; padding: 0px; margin: 0px; letter-spacing: 3px; font-size: 18px; margin-top: 15px; margin-bottom: 15px">UP TO 
-                              <span style="color:#37cbbf; font-weight: 600; font-size: 30px; font-family: 'Merriweather';">20% OFF
-                              </span>
-                            </p>
-                            <p style="font-family: 'Playfair', San; color: black; text-transform: uppercase; font-size: 90px; letter-spacing: 6px; padding: 0px; margin: 0px; margin-bottom: 20px; font-style: italic;font-weight: 500;">Sale
-                            </p>
-                          </a>
-                        </td>
-                      </tr>
-                      </table> -->
-
-              
-
+     
                       <!-- white space break -->
                     <div class="spacer" style="line-height: 5px; height: 60px; mso-line-height-rule: exactly;">&nbsp;</div>
 
 
                     <!-- single Column Promo Section -->
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="80%" style="padding:0; margin:0;">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="padding:0; margin:0;">
                       <tr>
-                        <td align="center" style=" text-align: center; align-items: center; margin-bottom:0px;padding-bottom:0px;" width="440">
+                        <td align="center" style=" text-align: center; align-items: center; margin-bottom:0px;padding-bottom:0px;mso-padding-bottom-alt:30px;mso-padding-top-alt:30px;" width="440">
                           <p style=" font-weight: 400; line-height: 2px; text-align: center; padding-top: 15px; text-align: center;  word-wrap: break-word;font-family: Roboto,sans-serif;text-transform: uppercase;font-size: 14px;letter-spacing: 2px;margin-top: 10px;margin-bottom:10px;padding:0;">Upgrade your look
                           </p>
         
-                          <p style=" font-weight: bold; text-align: center; text-align: center;  word-wrap: break-word;font-family: Raleway,sans-serif;text-transform: uppercase;font-size: 32px;letter-spacing: 2px;margin-top:2px;margin-bottom:0px;">Get ready for summer
+                          <p style="padding-top:5px; font-weight: bold; text-align: center; text-align: center;  word-wrap: break-word;font-family: Raleway,sans-serif;text-transform: uppercase;font-size: 32px;letter-spacing: 2px;margin-top:2px;margin-bottom:0px;">Get ready for summer
                           </p>
                         </td>
                       </tr>
@@ -546,15 +472,32 @@
 
 
                       
-                      <!-- white space break -->
-                    <div class="spacer" style="line-height: 5px; height: 70px; mso-line-height-rule: exactly;">&nbsp;</div>
+                    <!-- white space break -->
+                    <div class="spacer" style="line-height: 50px; height: 50px; mso-line-height-rule: exactly;">&nbsp;</div>
+                        
+                        
+                    
+                    <!-- single Column main image -->
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"  >
+                      <tr>
+                        <td>
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" >
+                          <tr>
+                            <td >
+                              <img width="95%" src="https://i.ibb.co/7zQMd5B/model-1-v2.jpg" alt="main-model-3-transparent; max-width:100%;" border="0" 
+                            style="display: block; text-align: center; align-items: center; margin: 0 auto;" />
+                            </td>
+                          </tr>
+                        </table>   
+                        </td>
+                      </tr>
+                    </table>
 
                     <!-- single Column Promo Section -->
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="80%">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                       <tr>
-                        <td align="center" style=" text-align: center; align-items: center;" width="440">
-                          <img src="https://i.ibb.co/7zQMd5B/model-1-v2.jpg" alt="main-model-3-transparent" border="0" width="480" 
-                            style="display: block; text-align: center; align-items: center; margin: 0 auto;" />
+                        <td align="center" style=" text-align: center; align-items: center; max-width: 90%;mso-padding-bottom-alt:40px;mso-padding-top-alt:40px;" >
+                    
                            
                             <p style="height: 20px;"></p>
                             <p style=" font-weight: bold; text-align: center; text-align: center;  word-wrap: break-word;font-family: Raleway,sans-serif;text-transform: uppercase;font-size: 30px;letter-spacing: 2px;margin-top:2px;margin-bottom:0px;">Put it all together
@@ -564,9 +507,9 @@
                             <p style="letter-spacing: 1px; font-weight: 400; line-height: 20px; text-align: center; padding-top: 5px; text-align: center;  word-wrap: break-word;font-family: Raleway,serif;font-size: 14px;display: inline-block;padding-left: 45px; padding-right:45px;">From elegant dresses to chic handbags, we have everything you need to make a statement. Upgrade your wardrobe with a touch of sophistication & style.   
                             </p>
                   
-                          <p style="align-items: center; padding-top: 30px;">
-                            <a href=" #" target="_blank"
-                            style="font-size: 15px; text-transform: uppercase; border-radius: 35px; color: white; background-color: #130909;padding: 20px 35px; text-decoration: none;  letter-spacing: 1px; font-family: Raleway, sans-serif; font-weight: bold;">SHOP NOW</a>
+                          <p style="align-items: center; padding-top: 30px;mso-margin-bottom-alt:30px;mso-margin-top-alt:50px;">
+                            <a class="darkmode-button" href=" #" target="_blank"
+                            style="font-size: 15px; text-transform: uppercase; border-radius: 35px; color: white; background-color: #130909;padding: 20px 35px; mso-padding-top-alt: 20px; mso-padding-bottom-alt: 20px; mso-padding-left-alt: 35px; mso-padding-right-alt: 35px;text-decoration: none;  letter-spacing: 1px; font-family: Raleway, sans-serif; font-weight: bold;">SHOP NOW</a>
                           </p>
                         </td>
                       </tr>
@@ -584,9 +527,9 @@
                     <!--[if mso]>
                       <table role="presentation" width="100%">
                       <tr>
-                      <td style="width:50%; padding: 10px;" valign="middle">
+                      <td style="width:48%; padding: 10px;" valign="middle">
                     <![endif]-->
-                    <div width="260" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;">
+                    <div width="48%" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;padding:5px;">
                       <div style="width:100%; line-height:14px; text-align: center; ">
                           <a href="#" target="_blank">
                             <img src="https://i.ibb.co/6HxfvHd/model-3-resized.jpg" width="240" height="auto" alt="model 3">
@@ -599,9 +542,9 @@
                     </div>      
                     <!--[if mso]>
                       </td>
-                      <td style="width:50%;padding: 10px;" valign="middle">
+                      <td style="width:48%;padding: 10px;" valign="middle">
                     <![endif]-->
-                    <div width="260" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;">
+                    <div width="48%" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;padding:5px;">
                       <div style="width:100%; line-height:14px; text-align: center; ">
                           <a href="#" target="_blank">
                             <img src="https://i.ibb.co/QnWPNRw/model-2-resized.jpg" width="240" height="auto" alt="model 3">
@@ -626,9 +569,9 @@
                     <!--[if mso]>
                       <table role="presentation" width="100%">
                       <tr>
-                      <td style="width:50%; padding: 10px;" valign="middle">
+                      <td style="width:48%; padding: 10px;" valign="middle">
                     <![endif]-->
-                    <div width="260" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;">
+                    <div width="48%" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;padding:5px;">
                       <div style="width:100%; line-height:14px; text-align: center; ">
                           <a href="#" target="_blank">
                             <img src="https://i.ibb.co/LhDD4Rg/linen.jpg" width="240" height="auto" alt="model 3">
@@ -641,9 +584,9 @@
                     </div>      
                     <!--[if mso]>
                       </td>
-                      <td style="width:50%;padding: 10px;" valign="middle">
+                      <td style="width:48%;padding: 10px;" valign="middle">
                     <![endif]-->
-                    <div width="260" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;">
+                    <div width="48%" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;padding:5px;">
                       <div style="width:100%; line-height:14px; text-align: center; ">
                           <a href="#" target="_blank">
                             <img src="https://i.ibb.co/W3GWBmw/imresizer-1687419706603.jpg" width="240" height="auto" alt="Beach Short">
@@ -664,7 +607,7 @@
 
 
                   <!-- single column see whats new -->
-                  <table align="center" bgcolor="#d9dbc3" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <table class="darkmode-background" align="center" bgcolor="#d9dbc3" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                   <tr>
                     <td style=" text-align: center; align-items: center;">
                       <p style="letter-spacing: 1px; font-weight: bold; line-height: 23px; text-align: center; padding-top: 20px;font-family: Raleway, serif; text-transform: uppercase;font-size: 26px;">See What's New
@@ -675,14 +618,14 @@
 
 
                   <!-- two column product new arrivals row #1 -->
-                  <div align="center" class="two-col" style="text-align: center; font-size:0; vertical-align:middle; padding-top: 20px;padding-bottom: 15px;background-color: #d9dbc3"> <!-- font size 0 so that column can sit side by side -->
+                  <div  bgcolor="#d9dbc3" align="center" class="two-col darkmode-background" style="text-align: center; font-size:0; vertical-align:middle; padding-top: 20px;padding-bottom: 15px;background-color: #d9dbc3"> <!-- font size 0 so that column can sit side by side -->
                     <!--[if mso]>
-                      <table role="presentation" width="100%">
+                      <table role="presentation" width="100%" bgcolor="#d9dbc3">
                       <tr>
-                      <td style="width:50%; padding: 10px;" valign="middle">
+                      <td style="width:48%; mmso-padding-alt:10px; background:#d9dbc3; " valign="middle">
                     <![endif]-->
-                    <div width="260" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;">
-                      <div style="width:100%; line-height:14px; text-align: center; ">
+                    <div bgcolor="#d9dbc3" width="48%" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;padding:5px;">
+                      <div bgcolor="#d9dbc3" style="width:100%; line-height:14px; text-align: center; ">
                           <a href="#" target="_blank">
                             <img src="https://i.ibb.co/XYyjwqG/kitten-heel-resize.jpg" width="240" height="auto" alt="kitten heels">
                           </a>
@@ -696,10 +639,10 @@
                     </div>      
                     <!--[if mso]>
                       </td>
-                      <td style="width:50%;padding: 10px;" valign="middle">
+                      <td style="width:48%;mmso-padding-alt: 10px;background:#d9dbc3; " valign="middle">
                     <![endif]-->
-                    <div width="260" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;">
-                      <div style="width:100%; line-height:14px; text-align: center; ">
+                    <div bgcolor="#d9dbc3" width="48%" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;padding:5px;">
+                      <div bgcolor="#d9dbc3" style="width:100%; line-height:14px; text-align: center; ">
                           <a href="#" target="_blank">
                             <img src="https://i.ibb.co/KsvcGdh/helene-bag-resized.jpg" width="240" height="auto" alt="helene bag">
                           </a>
@@ -719,14 +662,14 @@
                   </div>
 
                   <!-- two column product new arrivals row #2 -->
-                  <div bgcolor="#D0D3BB" align="center" class="two-col" style="text-align: center; font-size:0; vertical-align:middle; padding-top: 45px;padding-bottom: 15px;background-color: #d9dbc3;"> <!-- font size 0 so that column can sit side by side -->
+                  <div bgcolor="#D0D3BB" align="center" class="two-col darkmode-background" style="text-align: center; font-size:0; vertical-align:middle; padding-top: 45px;padding-bottom: 15px;background-color: #d9dbc3;"> <!-- font size 0 so that column can sit side by side -->
                     <!--[if mso]>
                       <table role="presentation" width="100%">
                       <tr>
-                      <td style="width:50%; padding: 10px;" valign="middle">
+                      <td style="width:48%; mmso-padding-alt:  10px;" valign="middle">
                     <![endif]-->
-                    <div width="260" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;">
-                      <div style="width:100%; line-height:14px; text-align: center; ">
+                    <div bgcolor="#d9dbc3"width="48%" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;padding:5px;">
+                      <div bgcolor="#d9dbc3"style="width:100%; line-height:14px; text-align: center; ">
                           <a href="#" target="_blank">
                             <img src="https://i.ibb.co/5R063GQ/imresizer-1687412184498.jpg" width="240" height="auto" alt="sunglasses">
                           </a>
@@ -741,10 +684,10 @@
                     </div>      
                     <!--[if mso]>
                       </td>
-                      <td style="width:50%;padding: 10px;" valign="middle">
+                      <td style="width:48%;mmso-padding-alt: 10px;" valign="middle">
                     <![endif]-->
-                    <div width="260" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;">
-                      <div style="width:100%; line-height:14px; text-align: center; ">
+                    <div bgcolor="#d9dbc3" width="48%" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;padding:5px;">
+                      <div bgcolor="#d9dbc3" style="width:100%; line-height:14px; text-align: center; ">
                           <a href="#" target="_blank">
                             <img src="https://i.ibb.co/84Pzj62/imresizer-1687418664942.jpg" width="240" height="auto" alt="flare dress">
                           </a>
@@ -765,17 +708,17 @@
     
 
                    <!-- white space break -->
-                  <div class="spacer" style=" background-color: #d9dbc3;height: 15px; mso-line-height-rule: exactly;">&nbsp;</div>
+                  <div class="spacer" style=" background-color: #d9dbc3;height: 25px; line-height:25px;mso-line-height-rule: exactly;">&nbsp;</div>
 
 
               
 
                   <!-- single column button shop for new arrivals -->
-                  <table bgcolor="#d9dbc3" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <table class="darkmode-background" bgcolor="#d9dbc3" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                     <tr>
                       <td align="center" style=" text-align: center; text-align: center;" width="600" height="auto">
                         <p style="align-items: center; ">
-                          <a href=" #" target="_blank"
+                          <a class="darkmode-button" href=" #" target="_blank"
                           style="font-size: 14px; text-transform: uppercase; border-radius: 35px; color: white; background-color: #130909;padding: 20px 35px; text-decoration: none;  letter-spacing: 1px; font-family: Raleway, sans-serif; font-weight: bold;">Shop new arrivals
                           </a>
                         </p>
@@ -786,7 +729,7 @@
 
                     
                    <!-- white space break -->
-                  <div class="spacer"  style="background-color: #d9dbc3; height: 55px; mso-line-height-rule: exactly;">&nbsp;</div>
+                  <div class="spacer"  style="background-color: #d9dbc3; height: 55px; mso-line-height-rule: exactly; ">&nbsp;</div>
 
 
 
@@ -802,7 +745,7 @@
 
             
                     <!-- white space break -->
-                    <div class="spacer" style="background-color: #2D313F;line-height: 20px; height: 20px; mso-line-height-rule: exactly;">&nbsp;</div>
+                    <div class="spacer" style="background-color: #2D313F;line-height: 40px; height: 40px; mso-line-height-rule: exactly;">&nbsp;</div>
 
 
            
@@ -811,10 +754,10 @@
                       <!--[if mso]>
                         <table role="presentation" width="100%">
                         <tr>
-                        <td style="width:30%; padding: 10px;" valign="top">
+                        <td style="width:30%; padding: 10px;background-color: #2D313F;" valign="top">
                       <![endif]-->
                       <div width="160" class="column" style=" max-width: 160px; display:inline-block; vertical-align:top;">
-                        <div style="max-width: 160px; padding-left:10px;padding-right:15px; line-height:14px; border-right: 1px solid #575965;">
+                        <div class="border-none"  style="max-width: 160px; padding-left:10px;padding-right:15px; line-height:14px; border-right: 1px solid #575965;">
                           <p>
                             <img class="content" src="https://i.ibb.co/Q8mnS59/icons8-sustainability-50.png" alt="side-1-resized" border="0" style="width: 30px; display: inline-block; align-items: center;padding-bottom:0px;margin-bottom: 0px;" width="30" height="auto">
                           </p>
@@ -833,7 +776,7 @@
                         <td style="width:30%;padding: 10px;" valign="top">
                       <![endif]-->
                       <div width="160" class="column" style=" max-width: 160px; display:inline-block; vertical-align:top;">
-                        <div style="max-width: 160px; padding-left:10px;padding-right:15px; line-height:14px; border-right: 1px solid #575965;">
+                        <div class="border-none" style="max-width: 160px; padding-left:10px;padding-right:15px; line-height:14px; border-right: 1px solid #575965;">
                           <p>
                             <img class="content" src="https://i.ibb.co/ZNztYRK/icons8-shipping-50.png" alt="side-1-resized" border="0" style="width: 30px; display: inline-block; align-items: center;padding-bottom:0px;margin-bottom: 0px;" width="30" height="auto">
                           </p>
@@ -880,7 +823,7 @@
                         <tr>
                           <td align="center">
                               <p style=" margin-bottom:20px;color: #ffffff;">care@chicestate.com</p>
-                              <a href="#" target="_blank"> 
+                              <a href="#" target="_blank" style="color: #ffffff"> 
                                 <img src="https://i.ibb.co/XLh7bhY/icons8-facebook-50.png" alt="facebook" border="0" alt="" style="Margin:0; height: 25px; width: 25px; margin-bottom: 20px; margin-right: 5px;"/>
                               </a>
                               <a href="#" target="_blank"> 
@@ -902,7 +845,7 @@
                     align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" class="responsive-table" bgcolor="#2D313F">
                       <tr>
                         <td align="center">
-                          <p style="Margin:0; font-size: 11px; font-family: 'Raleway', sans-serif; letter-spacing: 1px; padding-bottom: 15px; padding-top:15px;text-transform: uppercase;border-bottom: 1px solid #575965;border-top: 1px solid #575965">
+                          <p style="Margin:0; font-size: 11px; color:#ffffff; font-family: 'Raleway', sans-serif; letter-spacing: 1px; padding-bottom: 15px; padding-top:15px;text-transform: uppercase;border-bottom: 1px solid #575965;border-top: 1px solid #575965">
                             <a href="#" target="_blank" style="color: #ffffff; text-decoration: none; line-height: 20px; font-weight: 500;">back in stock
                           </a>
                         </p>
@@ -910,7 +853,7 @@
                       </tr>
                         <tr>
                           <td align="center">
-                            <p style="Margin:0; font-size: 11px; font-family: 'Raleway', sans-serif; letter-spacing: 1px; padding-bottom: 15px; padding-top:15px;text-transform: uppercase;border-bottom: 1px solid #575965">
+                            <p style="Margin:0; font-size: 11px; color:#ffffff; font-family: 'Raleway', sans-serif; letter-spacing: 1px; padding-bottom: 15px; padding-top:15px;text-transform: uppercase;border-bottom: 1px solid #575965">
                               <a href="#" target="_blank" style="color: #ffffff; text-decoration: none; line-height: 20px; font-weight: 500;">best sellers
                             </a>
                           </p>
@@ -918,7 +861,7 @@
                         </tr>
                         <tr>
                           <td align="center">
-                            <p style="Margin:0; font-size: 11px; font-family: 'Raleway', sans-serif; letter-spacing: 1px; padding-bottom: 15px; padding-top:15px;text-transform: uppercase;border-bottom: 1px solid #575965">
+                            <p style="Margin:0; font-size: 11px; color:#ffffff; font-family: 'Raleway', sans-serif; letter-spacing: 1px; padding-bottom: 15px; padding-top:15px;text-transform: uppercase;border-bottom: 1px solid #575965">
                               <a href="#" target="_blank" style="color: #ffffff; text-decoration: none; line-height: 20px; font-weight: 500;">new arrivals
                             </a>
                           </p>
@@ -930,42 +873,42 @@
 
                        
                     <!-- 2 column footer bottom layout-->
-                    <div align="left" class="two-col" style="background-color: #2D313F ;text-align: center; font-size:0; vertical-align:middle; padding-top: 45px;padding-bottom: 45px;"> <!-- font size 0 so that column can sit side by side -->
+                <div align="center" class="two-col" style="background-color: #2D313F ;text-align: center; font-size:0; vertical-align:middle; padding-top: 45px;padding-bottom: 45px;"> <!-- font size 0 so that column can sit side by side -->
                       <!--[if mso]>
                         <table role="presentation" width="100%">
                         <tr>
-                        <td style="width:65%; padding: 10px;" valign="middle">
+                        <td style="width:50%; padding: 10px;" valign="middle">
                       <![endif]-->
-                      <div width="400" class="column" style=" max-width: 400px; display:inline-block; vertical-align:middle;">
-                        <div style="width:100%; line-height:14px; text-align: left; ">
-                          <p style="color: #ffffff;font-size: 32px; text-align: left;font-family: Playfair Display, serif; font-style:italic;">
+                      <div align="center" width="300" class="column footer-left" style=" max-width: 280; display:inline-block; vertical-align:middle;">
+                        <div  align="center" style="width:100%; line-height:14px; text-align: center; ">
+                          <p style="color: #ffffff;font-size: 32px; text-align: center;font-family: Playfair Display, serif; font-style:italic;">
                             <a href="#" target="_blank" style="color: #ffffff;">Chic Estate</a>
                           </p>
                         </div>
                       </div>      
                       <!--[if mso]>
                         </td>
-                        <td style="width:35%;padding: 10px;" valign="middle">
+                        <td style="width:50%;padding: 10px;" valign="middle">
                       <![endif]-->
-                      <div width="180" class="column" style=" max-width: 180px; display:inline-block; vertical-align:middle;">
-                        <div style="width: 100%;line-height:5px; ">
+                      <div align="center" width="300" class="column footer-right" style=" max-width: 280px; display:inline-block; vertical-align:middle;">
+                        <div align="center" style="width: 100%;line-height:5px; text-align: center; ">
                           <a href="#">
-                            <p align="left" style="font-size: 10px; color: #ffffff;   padding-top: 1px;  border: 0; font-family: Arial, sans-serif">
+                            <p align="center" style="font-size: 10px; color: #ffffff;   padding-top: 1px;  border: 0; font-family: Arial, sans-serif">
                               200 Crows Road, New York, NY 10001
                             </p>
                           </a>
                           <a href="#">
-                            <p align="left" style="font-size: 10px; color: #ffffff;   padding-top: 1px;  border: 0; font-family: Arial, sans-serif">
+                            <p align="center" style="font-size: 10px; color: #ffffff;   padding-top: 1px;  border: 0; font-family: Arial, sans-serif">
                               Privacy Policy | Terms & Conditions
                             </p>
                           </a>
                           <a href="#">
-                            <p align="left" style="font-size: 10px; color: #ffffff;   padding-top: 1px;  border: 0; font-family: Arial, sans-serif">
+                            <p align="center" style="font-size: 10px; color: #ffffff;   padding-top: 1px;  border: 0; font-family: Arial, sans-serif">
                               View this email on the web
                             </p>
                           </a>
                           <a href="#">
-                            <p align="left" style="font-size: 10px; color: #ffffff;   padding-top: 1px;  border: 0; font-family: Arial, sans-serif">
+                            <p align="center" style="font-size: 10px; color: #ffffff;   padding-top: 1px;  border: 0; font-family: Arial, sans-serif">
                               Unsubscribe
                             </p>
                           </a>
