@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="https://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"> <!-- defined XML and Office Open XML namespaces need for Outlook on Windows -->
+<html lang="en" xmlns="https://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml" > <!-- defined XML and Office Open XML namespaces need for Outlook on Windows -->
 <head>
     <meta charset="utf-8"> <!-- Unicode character encoding for email, covers most characters for most languagues. -->
     <meta name="viewport" content="width=device-width,initial-scale=1"> <!-- initial zoom should be 100%, viewing area should be width of device -->
@@ -129,7 +129,12 @@
 
             /* <!--[if mso]>
         
-              body, center, table,td, div {
+            body {
+              background: #000000 !important;
+            }
+            
+            
+            center, table,td, div {
               background: #333 !important;
               color: #ffffff!important;
               border: none !important;
@@ -137,6 +142,7 @@
             
             a {
               color: #fff !important;
+            
             }
             
             .spacer {
@@ -146,6 +152,10 @@
                color:#F7F8F9 !important;
             background: #F7F8F9 !important;
             }
+            .icon {
+              color: #ffffff !important;	
+            }
+           
     <![endif]-->  */
             
             
@@ -207,9 +217,9 @@
            }
           
            a {
-            /*  background: transparent !important; */
+           background: transparent !important; 
               /* background: #4e4e4e !important; */
-             color: #fff !important;
+         /*     color: #fff !important; */
 
           
             }
@@ -243,6 +253,7 @@
           img[class=icons-background] {
               background: transparent !important;
           }
+          
             
        		.email {
             color: #ffffff !important;
@@ -258,16 +269,40 @@
             .two-col.darkmode-background {
               background-color: #333 !important;
             }
+             img.icon {
+              color: #ffffff !important;	
+            }
+            .darkmode-background {
+              background-color: #333 !important;
+            } 
         }
 
         
         
         @media (max-width: 350px) {
           .three-col .column {
-             max-width: 92% !important;
-               padding-top: 20px !important;
+           	width: 90%
+           	max-width: 100% !important;
+        		margin: auto !important;
+            padding-top: 20px !important;
+            text-align: center important;
+                 
+    
           }
-          
+          .three-col .column .border-none {
+            border-right:0 !important;
+          } 
+      
+          .two-col  .column img { 
+            width: 95% !important;
+          	max-width: 100% !important;
+           	height: auto !important;
+          }
+          .paragraph-width {
+            padding-left: 30px !importamt;
+            padding-right: 30px !important;
+          }
+      
           h1 {
             font-size: 28px !important;
           }
@@ -278,45 +313,57 @@
           }
           
           .horizontal-line {
-              margin-left:3px !important;
+            margin-left:3px !important;
             margin-right: 3px !important;
           }
           
            .two-col .column {
+            width: 95%
             max-width: 100% !important;
-             padding-bottom: 20px !important;
+           	text-align: center !important;
+            padding-bottom: 20px !important;
+            margin: auto !important;
              
           }
           .column.footer-left {
-                   width: 100% !important;
-            height: auto !important;
+              width: 100% !important;
+           		 height: auto !important;
        
           }
           .column.footer-right {
-                   width: 100% !important;
+              width: 100% !important;
               height: auto !important;
        
           }
             	   
-          .column .border-none {
+      
+         .three-col .column .border-none {
             border-right-style: none !important;
+           border: none !important;
           }
-        
             	
       }
         
   
         
       
-        @media (min-width: 350px) and (max-width: 460px) {
+        @media (min-width: 351px) and (max-width: 460px) {
           .three-col .column {
-            max-width: 92% !important;
+            width:48% !important;
+            max-width: 100% !important;
             padding-top: 20px !important;
+            text-align:center !important;
+            margin: auto !important;
+           
           }
+          
+ 
+          
           .two-col .column {
+            width:95% !important;
             max-width: 100% !important;
             padding-bottom: 20px !important;
-               padding-top: 10px !important;
+            padding-top: 10px !important;
           }
           
           h1 {
@@ -329,27 +376,20 @@
           }
 
           .horizontal-line {
-             margin-left: 3px !important;
+            margin-left: 3px !important;
             margin-right: 3px !important;
           }
 
-         .two-col .column img {
-          	width: 100% !important;
+         .two-col  .column img {
+        		width: 90% !important;
+          	max-width:100% !important;
            	height: auto !important;
-           	max-width: 100% !important;
+   
            } 
-                 .column.footer-left {
-             width: 100% !important;
-                        height: auto !important;
-          }
-          .column.footer-right {
-             width: 100% !important;
-                  height: auto !important;
-        
-          }
+ 
             	
           
-          .column .border-none {
+          .three-col .column .border-none {
             border-right-style: none !important;
           }
         
@@ -359,20 +399,17 @@
         
         
         
-        @media (min-width: 460px) {
+        @media (min-width: 461px) {
           .three-col .column {
-            max-width:50% !important;
+            	width:30% !important;
+              max-width: 100% !important;
           }
           .two-col .column {
-            width: 50% !important;
+            max-width: 48% !important;
+            max-width: 100% !important;
             
           }
-          .sidebar .small {
-            max-width: 16% !important;
-          }
-          .sidebar .big {
-            max-width: 84% !important;
-          }
+
           .line {
             margin-left: 13px !important;
             margin-right: 13px !important;
@@ -387,13 +424,15 @@
           
           
           
-          @media (min-width: 460px) and (max-width: 600px) {
-       .three-col .column {
-            max-width: 50% !important;
+          @media (min-width: 461px) and (max-width: 600px) {
+       			.three-col .column {
+            	width:30% !important;
+              max-width: 100% !important;
           }
           
             .two-col .column {
-            width: 50% !important;
+            	max-width: 48% !important;
+              max-width: 100% !important;
             
           }
           }
@@ -420,18 +459,18 @@
                     <td style="padding: 20px 0">
                   <![endif]-->
 
-                      <!--Preheader (remove Comment)-->
-                      <div style="font-size:0px; color: #ffffff; line-height: 1px; mso-line-height-rule: exactly; display: none; max-width: 0px; max-height: 0px; opacity: 0; overflow: hidden; mso-hide: all">
-                      Chic Estate Exclusive Offer
-                      </div> 
+                  <!--Preheader (remove Comment)-->
+                  <div style="font-size:0px; color: #ffffff; line-height: 1px; mso-line-height-rule: exactly; display: none; max-width: 0px; max-height: 0px; opacity: 0; overflow: hidden; mso-hide: all">
+                  Chic Estate Exclusive Offer
+                  </div> 
 
-                      <div class="outer" style="width:96%; max-width: 600px; margin:20px auto;background-color:#ffffff; ">
+                  <div class="outer" style="width:100%; max-width: 600px; auto;background-color:#ffffff;">
                         
 
 
 
                       <!-- Single Column Header Logo -->
-                      <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                      <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#ffffff;" >
                         <tr>
                           <td align="center" width="80%">
                             <p style="font-style: italic; padding: 0px 0px 10px 0px; margin-bottom: 10px; font-size: 50px; font-weight: bold; text-align: center; align-items: center; font-family: 'Playfair Display', serif; color: #4e4e4e;">Chic Estate
@@ -442,9 +481,9 @@
 
                         
                       <!-- horizontal line break v3 -->  
-                      <table  border="0" cellpadding="0" cellspacing="0" align="center"  style="margin:0 auto;">
+                      <table  border="0" cellpadding="0" cellspacing="0" align="center"  style="margin:0 auto;background-color:#ffffff;">
                       <tr>
-                        <td  class="line" style="line-height: 1px;font-size:20px;border-bottom: 1px solid #240A0A;" height="1" width="540"> </td>
+                        <td  class="line" style="line-height: 1px;font-size:20px;border-bottom: 1px solid #D3D3D3;" height="1" width="540"> </td>
                       </tr>
                         <!--<tr>
                         <td style="line-height: 20px;font-size:20px;" height="20"> </td>
@@ -454,17 +493,17 @@
 
      
                       <!-- white space break -->
-                    <div class="spacer" style="line-height: 5px; height: 60px; mso-line-height-rule: exactly;">&nbsp;</div>
+                    <div class="spacer" style="line-height: 5px; height: 60px; mso-line-height-rule: exactly;background-color:#ffffff;">&nbsp;</div>
 
 
                     <!-- single Column Promo Section -->
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="padding:0; margin:0;">
+                    <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" style="padding:0; margin:0;background-color:#ffffff;">
                       <tr>
-                        <td align="center" style=" text-align: center; align-items: center; margin-bottom:0px;padding-bottom:0px;mso-padding-bottom-alt:30px;mso-padding-top-alt:30px;" width="440">
+                        <td align="center" style=" text-align: center; align-items: center; margin-bottom:0px;padding-bottom:0px;mso-padding-bottom-alt:20px;mso-padding-top-alt:40px;" width="440">
                           <p style=" font-weight: 400; line-height: 2px; text-align: center; padding-top: 15px; text-align: center;  word-wrap: break-word;font-family: Roboto,sans-serif;text-transform: uppercase;font-size: 14px;letter-spacing: 2px;margin-top: 10px;margin-bottom:10px;padding:0;">Upgrade your look
                           </p>
         
-                          <p style="padding-top:5px; font-weight: bold; text-align: center; text-align: center;  word-wrap: break-word;font-family: Raleway,sans-serif;text-transform: uppercase;font-size: 32px;letter-spacing: 2px;margin-top:2px;margin-bottom:0px;">Get ready for summer
+                          <p style="padding-top:5px; mso-padding-top-alt: 10px; font-weight: bold; text-align: center; text-align: center;  word-wrap: break-word;font-family: Raleway,sans-serif;text-transform: uppercase;font-size: 32px;letter-spacing: 2px;margin-top:2px;margin-bottom:0px;">Get ready for summer
                           </p>
                         </td>
                       </tr>
@@ -473,70 +512,133 @@
 
                       
                     <!-- white space break -->
-                    <div class="spacer" style="line-height: 50px; height: 50px; mso-line-height-rule: exactly;">&nbsp;</div>
+                    <div class="spacer" height="50" style="line-height: 50px; height: 50px; mso-line-height-alt:30px;background-color:#ffffff;">&nbsp;</div>
                         
                         
+          
+     
+                    
                     
                     <!-- single Column main image -->
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"  >
+                      <table bgcolor="#ffffff" align="center" width="100%" style="text-align:center; " role="presentation" style=" border:0; border-spacing:0;" cellpadding="0"
+                      cellspacing="0" style="background-color:#ffffff;">
+                        <tr>
+                          <td>
+                            <table width="90%" align="center" role="presentation" cellpadding="0" cellspacing="0" style="text-align:center; margin:auto;" style="background-color:#ffffff;">
+           				 <!--[if mso]>
+                      <table role="presentation" width="100%" style="background-color:#ffffff;">
                       <tr>
-                        <td>
-                        <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" >
-                          <tr>
-                            <td >
-                              <img width="95%" src="https://i.ibb.co/7zQMd5B/model-1-v2.jpg" alt="main-model-3-transparent; max-width:100%;" border="0" 
-                            style="display: block; text-align: center; align-items: center; margin: 0 auto;" />
+                      <td style=" padding: 10px; text-align:center;margin: auto;" valign="middle">
+                    <![endif]-->
+                        <tr>
+                          <td align="center" style="max-width:100%;padding: 2px;text-align:center; margin:auto;">
+                            <img 
+                            src="https://i.ibb.co/BjvcKY8/resized-hero.png" 
+                            alt="hero-image" 
+                            border="0"
+                         
+                          
+                            border="0"
+                            style="display: inline-block;text-align:center; margin:auto;background-color:#ffffff;"
+                          />
                             </td>
-                          </tr>
-                        </table>   
-                        </td>
-                      </tr>
+                        		</tr>
+                                <!--[if mso]>
+                    </td>
+                    </tr>
                     </table>
-
-                    <!-- single Column Promo Section -->
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
-                      <tr>
-                        <td align="center" style=" text-align: center; align-items: center; max-width: 90%;mso-padding-bottom-alt:40px;mso-padding-top-alt:40px;" >
+                  <![endif]-->
+                          </table>
+                            </td>
+                        </tr>
+                      </table>
                     
-                           
-                            <p style="height: 20px;"></p>
-                            <p style=" font-weight: bold; text-align: center; text-align: center;  word-wrap: break-word;font-family: Raleway,sans-serif;text-transform: uppercase;font-size: 30px;letter-spacing: 2px;margin-top:2px;margin-bottom:0px;">Put it all together
-                            </p>
+                  
+                    <!-- single Column Promo Section -->
+                    <table width="100%" align="center"  align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="margin: auto;text-align:center;background-color:#ffffff;">
+                      <tr>
+                        <td align="center" style="text-align: center; align-items: center; mso-padding-bottom-alt:40px;mso-padding-top-alt:40px;margin: " >
+                    			
+                          <table width="90%" align="center" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="text-align:center;margin: auto;" >
+                      				<tr>
+                        			<td style=" text-align: center; align-items: center; max-width: 540px;mso-padding-top-alt: 30px;">
+                                
+                               <p style="height: 20px;"></p>
+                            	<p style=" padding-left: 10px; padding-right: 10px;font-weight: bold; text-align: center; text-align: center;  word-wrap: break-word;font-family: Raleway,sans-serif;text-transform: uppercase;font-size: 30px;letter-spacing: 2px;margin-top:2px;margin-bottom:0px;">Put it all together
+                            	</p>
                      
               
-                            <p style="letter-spacing: 1px; font-weight: 400; line-height: 20px; text-align: center; padding-top: 5px; text-align: center;  word-wrap: break-word;font-family: Raleway,serif;font-size: 14px;display: inline-block;padding-left: 45px; padding-right:45px;">From elegant dresses to chic handbags, we have everything you need to make a statement. Upgrade your wardrobe with a touch of sophistication & style.   
+                            <p style="letter-spacing: 1px; font-weight: 400; line-height: 20px; text-align: center; padding-top: 5px; text-align: center;  word-wrap: break-word;font-family: Raleway,serif;font-size: 14px;display: inline-block;padding-left: 45px; padding-right:45px;">From elegant dresses to chic handbags, we have everything you need to make a statement. Upgrade your wardrobe with <br>a touch of sophistication & style.   
                             </p>
                   
-                          <p style="align-items: center; padding-top: 30px;mso-margin-bottom-alt:30px;mso-margin-top-alt:50px;">
-                            <a class="darkmode-button" href=" #" target="_blank"
-                            style="font-size: 15px; text-transform: uppercase; border-radius: 35px; color: white; background-color: #130909;padding: 20px 35px; mso-padding-top-alt: 20px; mso-padding-bottom-alt: 20px; mso-padding-left-alt: 35px; mso-padding-right-alt: 35px;text-decoration: none;  letter-spacing: 1px; font-family: Raleway, sans-serif; font-weight: bold;">SHOP NOW</a>
-                          </p>
+                       			<p>
+                              
+                              
+                            <p align="center" role="presentation" style="align-items: center; mso-padding-top-alt:40px;padding-top: 20px;">
+               
+                        </td>
+                      </tr>
+                          </table>
+                           
+                
                         </td>
                       </tr>
                       </table>
+                    
 
+                    
+                    
+                    
+                    
+                    <!-- button testing--> 
+                    <table width="100%" align="center"  align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background-color:#ffffff;">
+                      <tr>
+                        <td style="mso-padding-top-alt: 60px;mso-padding-bottom-alt: 60px;">
+                          <div align="center" role="presentation" style="mso-padding-top: 40px;mso-bottom-top: 40px; ">
+                          <!--[if mso]>
+                         <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" 
+                          href="http://www.https://visit.arima-onsen.com/"
+                          style="height:60px;width:180px;v-text-anchor:middle;width:font-size:35px;mso-ansi-font-size:35px;mso-padding-bottom-alt:30px;mso-padding-top-alt:50px;" 
+                          arcsize="15%" 
+                          stroke="f" 
+                          fillcolor="#130909">
+                           <w:anchorlock/>
+                           <center>
+                         <![endif]-->
+                         <a class="button-border"  href="http://www.https://visit.arima-onsen.com/" style="mso-padding-top-alt: 45px; mso-padding-bottom-alt: 45px; mso-padding-left-alt: 35px; mso-padding-right-alt: 35px;padding: 10px 25px;background-color:#130909;border-radius:35px;color:#ffffff;display:inline-block;font-family:Lato,sans-serif;font-size:15px;font-weight:bold;line-height:40px;text-align:center;text-decoration:none;width:120px;-webkit-text-size-adjust:none; text-transform:uppercase;text-decoration: none;  letter-spacing: 1px; font-family: Raleway, sans-serif; font-weight: bold;mso-ansi-font-size:18px;">Shop now
+                         </a>
+                             <!--[if mso]>
+                              </center>
+                            </v:roundrect>
+                            <![endif]-->
+                                
+                         </div> 
+                        </td>
+                      </tr>
+                    </table>
+          
 
 
                   <!-- white space break -->
-                  <div class="spacer" style="line-height: 5px; height: 30px; mso-line-height-rule: exactly;">&nbsp;</div>
+                  <div class="spacer" style="line-height: 5px; height: 30px; mso-line-height-rule: exactly;background-color:#ffffff;">&nbsp;</div>
 
 
 
-                  <!-- two column product row #1 -->
-                  <div align="center" class="two-col" style="text-align: center; font-size:0; vertical-align:middle; padding-top: 45px;padding-bottom: 10px;"> <!-- font size 0 so that column can sit side by side -->
+ 								<!-- two column product row #1 -->
+                  <div align="center" class="two-col" style="text-align: center; font-size:0; vertical-align:middle; padding-top: 45px;padding-bottom: 10px;background-color:#ffffff;"> <!-- font size 0 so that column can sit side by side -->
                     <!--[if mso]>
                       <table role="presentation" width="100%">
                       <tr>
                       <td style="width:48%; padding: 10px;" valign="middle">
                     <![endif]-->
-                    <div width="48%" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;padding:5px;">
-                      <div style="width:100%; line-height:14px; text-align: center; ">
+                    <div  align="center"width="48%" align="center" class="column" style=" display:inline-block; vertical-align:middle;padding:10px;text-align:center;">
+                      <div align="center" style="width:100%; line-height:14px; text-align: center; ">
                           <a href="#" target="_blank">
-                            <img src="https://i.ibb.co/6HxfvHd/model-3-resized.jpg" width="240" height="auto" alt="model 3">
+                            <img src="https://i.ibb.co/6HxfvHd/model-3-resized.jpg" width="260" height="auto" alt="model 3" style="text-align:center;">
                           </a>
-                          <p style="color: #000000;font-size: 15px; text-align: center;font-family: Raleway, serif;  line-height: 20px;">100% Linen Trapeze <br>Midi Dress
+                          <p style="color: #000000;font-size: 16px; text-align: center;font-family: Raleway, serif;  line-height: 20px;">100% Linen Trapeze <br>Midi Dress
                            </p>
-                           <p style="color: #000000;font-size: 15px; text-align: center;font-family: sans-serif; font-weight: bold;">$70.00
+                           <p style="color: #000000;font-size: 16px; text-align: center;font-family: sans-serif; font-weight: bold;">$70.00
                           </p>
                       </div>
                     </div>      
@@ -544,14 +646,14 @@
                       </td>
                       <td style="width:48%;padding: 10px;" valign="middle">
                     <![endif]-->
-                    <div width="48%" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;padding:5px;">
-                      <div style="width:100%; line-height:14px; text-align: center; ">
+                    <div  align="center"width="48%" align="center"  class="column" style=" display:inline-block; vertical-align:middle;padding:10px;text-align:center;">
+                      <div align="center"style="width:100%; line-height:14px; text-align: center; ">
                           <a href="#" target="_blank">
-                            <img src="https://i.ibb.co/QnWPNRw/model-2-resized.jpg" width="240" height="auto" alt="model 3">
+                            <img src="https://i.ibb.co/QnWPNRw/model-2-resized.jpg" width="260" height="auto" alt="model 3" style="text-align:center;">
                           </a>
-                          <p style="color: #000000;font-size: 15px; text-align: center;font-family: Raleway, serif;  line-height: 20px;">100% Linen Trapeze <br>Midi Short Sleeve Dress
+                          <p style="color: #000000;font-size: 16px; text-align: center;font-family: Raleway, serif;  line-height: 20px;">100% Linen Trapeze <br>Midi Short Sleeve Dress
                            </p>
-                           <p style="color: #000000;font-size: 15px; text-align: center;font-family: sans-serif; font-weight: bold;">$60.00
+                           <p style="color: #000000;font-size: 16px; text-align: center;font-family: sans-serif; font-weight: bold;">$60.00
                           </p>
                       </div>
                     </div>     
@@ -561,24 +663,24 @@
                     </table>
                   <![endif]-->
                   </div>
-
-
                     
-                   <!-- two column product row #2 -->
-                   <div align="center" class="two-col" style="text-align: center; font-size:0; vertical-align:middle; padding-top: 45px;padding-bottom: 15px;"> <!-- font size 0 so that column can sit side by side -->
+                    
+                    
+                 <!-- two column product row #2 -->
+                   <div align="center" class="two-col" style="text-align: center; font-size:0; vertical-align:middle; padding-top: 45px;padding-bottom: 15px;background-color:#ffffff;"> <!-- font size 0 so that column can sit side by side -->
                     <!--[if mso]>
                       <table role="presentation" width="100%">
                       <tr>
                       <td style="width:48%; padding: 10px;" valign="middle">
                     <![endif]-->
-                    <div width="48%" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;padding:5px;">
+                    <div width="48%" class="column" style=" display:inline-block; vertical-align:middle;padding:10px;text-align:center;">
                       <div style="width:100%; line-height:14px; text-align: center; ">
                           <a href="#" target="_blank">
-                            <img src="https://i.ibb.co/LhDD4Rg/linen.jpg" width="240" height="auto" alt="model 3">
+                            <img src="https://i.ibb.co/LhDD4Rg/linen.jpg" width="260" height="auto" alt="model 3">
                           </a>
-                          <p style="color: #000000;font-size: 15px; text-align: center;font-family: Raleway, serif;  line-height: 20px;">100% European Linen Pants<br>Quality linen from Europe.
+                          <p style="color: #000000;font-size: 16px; text-align: center;font-family: Raleway, serif;  line-height: 20px;">100% European Linen Pants<br>Quality linen from Europe.
                           </p>
-                            <p style="color: #000000;font-size: 15px; text-align: center;font-family: sans-serif; font-weight: bold;">$65.00
+                            <p style="color: #000000;font-size: 16px; text-align: center;font-family: sans-serif; font-weight: bold;">$65.00
                           </p>
                       </div>
                     </div>      
@@ -586,10 +688,10 @@
                       </td>
                       <td style="width:48%;padding: 10px;" valign="middle">
                     <![endif]-->
-                    <div width="48%" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;padding:5px;">
+                    <div width="48%" class="column" style=" display:inline-block; vertical-align:middle;padding:10px;text-align:center;">
                       <div style="width:100%; line-height:14px; text-align: center; ">
                           <a href="#" target="_blank">
-                            <img src="https://i.ibb.co/W3GWBmw/imresizer-1687419706603.jpg" width="240" height="auto" alt="Beach Short">
+                            <img src="https://i.ibb.co/W3GWBmw/imresizer-1687419706603.jpg" width="260" height="auto" alt="Beach Short">
                           </a>
                           <p style="color: #000000;font-size: 15px; text-align: center;font-family: Raleway, serif;  line-height: 20px;">100% European Linen <br>Drawstring Beach Short
                            </p>
@@ -603,100 +705,59 @@
                     </table>
                   <![endif]-->
                   </div>
+                        
+            <!-- white space break -->
+                  <div class="spacer" style=" height: 25px; line-height:25px;mso-line-height-rule: exactly;background-color:#ffffff;">&nbsp;</div>
 
-
+     
 
                   <!-- single column see whats new -->
-                  <table class="darkmode-background" align="center" bgcolor="#d9dbc3" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                  <table width="100%" class="darkmode-background" bgcolor="#d9dbc3" style="background-color:#d9dbc3" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation"  >
                   <tr>
-                    <td style=" text-align: center; align-items: center;">
-                      <p style="letter-spacing: 1px; font-weight: bold; line-height: 23px; text-align: center; padding-top: 20px;font-family: Raleway, serif; text-transform: uppercase;font-size: 26px;">See What's New
+                    <td class="darkmode-background" width="600" style=" text-align: center; align-items: center;mso-padding-bottom-alt: 35px;mso-padding-top-alt: 35px;background-color:#d9dbc3;max-width:100%;">
+                      <p class="darkmode-background" style="mso-padding-bottom-alt: 35px;background-color:#d9dbc3;letter-spacing: 1px; font-weight: bold; text-align: center; padding-top: 20px;font-family: Raleway, serif; text-transform: uppercase;font-size: 26px;">See What's New
                       </p>
                     </td>
                   </tr>
                   </table>
 
-
-                  <!-- two column product new arrivals row #1 -->
-                  <div  bgcolor="#d9dbc3" align="center" class="two-col darkmode-background" style="text-align: center; font-size:0; vertical-align:middle; padding-top: 20px;padding-bottom: 15px;background-color: #d9dbc3"> <!-- font size 0 so that column can sit side by side -->
+                    
+                    <!-- two column 2nd product row #1 -->
+                   <div  align="center" class="two-col" style="text-align: center; font-size:0; vertical-align:middle; padding-top: 5px;padding-bottom: 15px;background-color: #d9dbc3;"> <!-- font size 0 so that column can sit side by side -->
                     <!--[if mso]>
-                      <table role="presentation" width="100%" bgcolor="#d9dbc3">
+                      <table role="presentation" width="100%" style="background:#d9dbc3">
                       <tr>
-                      <td style="width:48%; mmso-padding-alt:10px; background:#d9dbc3; " valign="middle">
+                      <td style="width:48%; padding: 10px;mso-padding-alt:  10px;mso-padding-bottom-alt: 25px; mso-padding-left-alt: 20px;" valign="middle">
                     <![endif]-->
-                    <div bgcolor="#d9dbc3" width="48%" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;padding:5px;">
-                      <div bgcolor="#d9dbc3" style="width:100%; line-height:14px; text-align: center; ">
+                    <div   width="48%" class="column" style=" display:inline-block; vertical-align:middle;padding:10px;">
+                      <div style="width:100%; line-height:14px; text-align: center; ">
                           <a href="#" target="_blank">
-                            <img src="https://i.ibb.co/XYyjwqG/kitten-heel-resize.jpg" width="240" height="auto" alt="kitten heels">
+                            <img src="https://i.ibb.co/5R063GQ/imresizer-1687412184498.jpg" width="260" height="auto" alt="Beach Short">
                           </a>
-                          <p style="color: #000000;font-size: 16px; text-align: center;font-family: Raleway, serif;  line-height: 20px;">Kitten Heels
+                           <p style="color: #000000;font-size: 16px; text-align: center;font-family: Raleway, serif;  line-height: 20px;">Avery Polarized Sunglasses
                           </p>
-                          <p style="color: #000000;font-size: 15px; text-align: center;font-family: Raleway, serif;  line-height: 20px;"> Heels designed for <br>both comfort and fashion.
-                            </p>
-                            <p style="color: #000000;font-size: 15px; text-align: center;font-family: sans-serif; font-weight: bold;">$80.00
-                          </p>
-                      </div>
-                    </div>      
-                    <!--[if mso]>
-                      </td>
-                      <td style="width:48%;mmso-padding-alt: 10px;background:#d9dbc3; " valign="middle">
-                    <![endif]-->
-                    <div bgcolor="#d9dbc3" width="48%" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;padding:5px;">
-                      <div bgcolor="#d9dbc3" style="width:100%; line-height:14px; text-align: center; ">
-                          <a href="#" target="_blank">
-                            <img src="https://i.ibb.co/KsvcGdh/helene-bag-resized.jpg" width="240" height="auto" alt="helene bag">
-                          </a>
-                          <p style="color: #000000;font-size: 16px; text-align: center;font-family: Raleway, serif;  line-height: 20px;">Helene Handbag
-                          </p>
-                          <p style="color: #000000;font-size: 15px; text-align: center;font-family: Raleway, serif;  line-height: 20px;">Add a touch of sophistication <br>to your wardrobe.
-                            </p>
-                            <p style="color: #000000;font-size: 15px; text-align: center;font-family: sans-serif; font-weight: bold;">$70.00
-                          </p>
-                      </div>
-                    </div>     
-                    <!--[if mso]>
-                    </td>
-                    </tr>
-                    </table>
-                  <![endif]-->
-                  </div>
-
-                  <!-- two column product new arrivals row #2 -->
-                  <div bgcolor="#D0D3BB" align="center" class="two-col darkmode-background" style="text-align: center; font-size:0; vertical-align:middle; padding-top: 45px;padding-bottom: 15px;background-color: #d9dbc3;"> <!-- font size 0 so that column can sit side by side -->
-                    <!--[if mso]>
-                      <table role="presentation" width="100%">
-                      <tr>
-                      <td style="width:48%; mmso-padding-alt:  10px;" valign="middle">
-                    <![endif]-->
-                    <div bgcolor="#d9dbc3"width="48%" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;padding:5px;">
-                      <div bgcolor="#d9dbc3"style="width:100%; line-height:14px; text-align: center; ">
-                          <a href="#" target="_blank">
-                            <img src="https://i.ibb.co/5R063GQ/imresizer-1687412184498.jpg" width="240" height="auto" alt="sunglasses">
-                          </a>
-                          <p style="color: #000000;font-size: 16px; text-align: center;font-family: Raleway, serif;  line-height: 20px;">Avery Polarized Sunglasses
-                          </p>
-                          <p style="color: #000000;font-size: 15px; text-align: center;font-family: Raleway, serif;  line-height: 20px;"> Both classic & modern <br>
+                         <p style="color: #000000;font-size: 15px; text-align: center;font-family: Raleway, serif;  line-height: 20px;"> Both classic & modern <br>
                             with timeless appeal.
                             </p>
                           <p style="color: #000000;font-size: 15px; text-align: center;font-family: sans-serif; font-weight: bold;">$50.00
                         </p>
                       </div>
-                    </div>      
+                    </div>        
                     <!--[if mso]>
                       </td>
-                      <td style="width:48%;mmso-padding-alt: 10px;" valign="middle">
+                      <td style="width:48%;padding: 10px;" valign="middle">
                     <![endif]-->
-                    <div bgcolor="#d9dbc3" width="48%" class="column" style=" max-width: 260px; display:inline-block; vertical-align:middle;padding:5px;">
-                      <div bgcolor="#d9dbc3" style="width:100%; line-height:14px; text-align: center; ">
+                    <div  bgcolor="#d9dbc3" width="48%" class="column" style=" display:inline-block; vertical-align:middle;padding:10px;">
+                      <div style="width:100%; line-height:14px; text-align: center; ">
                           <a href="#" target="_blank">
-                            <img src="https://i.ibb.co/84Pzj62/imresizer-1687418664942.jpg" width="240" height="auto" alt="flare dress">
+                            <img src="https://i.ibb.co/84Pzj62/imresizer-1687418664942.jpg" width="260" height="auto" alt="Beach Short">
                           </a>
-                          <p style="color: #000000;font-size: 16px; text-align: center;font-family: Raleway, serif;  line-height: 20px;">Flare Mini Dress
+                           <p style="color: #000000;font-size: 16px; text-align: center;font-family: Raleway, serif;  line-height: 20px;">Flare Mini Dress
                           </p>
-                          <p style="color: #000000;font-size: 15px; text-align: center;font-family: Raleway, serif;  line-height: 20px;">Made from Tencel fabric <br>that accentuates your curves.
+                         <p style="color: #000000;font-size: 15px; text-align: center;font-family: Raleway, serif;  line-height: 20px;"> Made from Tencel fabric <br>that accentuates your curves.
                             </p>
-                            <p style="color: #000000;font-size: 15px; text-align: center;font-family: sans-serif; font-weight: bold;">$35.00
-                          </p>
+                          <p style="color: #000000;font-size: 15px; text-align: center;font-family: sans-serif; font-weight: bold;">$35.00
+                        </p>
                       </div>
                     </div>     
                     <!--[if mso]>
@@ -705,22 +766,106 @@
                     </table>
                   <![endif]-->
                   </div>
+                    
+                    
+
+                     <!-- two column 2nd product row #2 -->
+                   <div bgcolor="#d9dbc3" align="center" border="0" class="two-col" style="text-align: center; font-size:0; vertical-align:middle; padding-top: 5px;padding-bottom: 15px;background-color: #d9dbc3;padding-bottom:2px;"> <!-- font size 0 so that column can sit side by side -->
+                    <!--[if mso]>
+                      <table role="presentation" width="100%" style="background:#d9dbc3" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                      <td style="width:48%; padding: 10px;mso-padding-alt:  10px;mso-padding-bottom-alt: 25px; mso-padding-left-alt: 20px;" valign="middle">
+                    <![endif]-->
+                    <div  bgcolor="#d9dbc3" width="48%" class="column" style="display:inline-block; vertical-align:middle;padding:10px;">
+                      <div style="width:100%; text-align: center; ">
+                          <a href="#" target="_blank">
+                            <img src="https://i.ibb.co/XYyjwqG/kitten-heel-resize.jpg" width="260" height="auto" alt="Beach Short">
+                          </a>
+                           <p style="color: #000000;font-size: 16px; text-align: center;font-family: Raleway, serif;  line-height: 20px;">Kitten Heels
+                          </p>
+                         <p style="color: #000000;font-size: 15px; text-align: center;font-family: Raleway, serif;  line-height: 20px;">Heels designed for both comfort<br> and fashion.
+                            with timeless appeal.
+                            </p>
+                          <p style="color: #000000;font-size: 15px; text-align: center;font-family: sans-serif; font-weight: bold;">$65.00
+                        </p>
+                      </div>
+                    </div>        
+                    <!--[if mso]>
+                      </td>
+                      <td style="width:48%;padding: 10px;" valign="middle">
+                    <![endif]-->
+                    <div  bgcolor="#d9dbc3" width="48%" class="column" style="display:inline-block; vertical-align:middle;padding:10px;">
+                      <div style="width:100%; text-align: center; ">
+                         <a href="#" target="_blank">
+                            <img src="https://i.ibb.co/KsvcGdh/helene-bag-resized.jpg" width="260" height="auto" alt="Beach Short">
+                          </a>
+                           <p style="color: #000000;font-size: 16px; text-align: center;font-family: Raleway, serif;  line-height: 20px;">Helene Handbag
+                          </p>
+                         <p style="color: #000000;font-size: 15px; text-align: center;font-family: Raleway, serif;  line-height: 20px;">Add a touch of sophistication to <br> your wardrobe.
+                           
+                            </p>
+                          <p style="color: #000000;font-size: 15px; text-align: center;font-family: sans-serif; font-weight: bold;">$75.00
+                        </p>
+                      </div>
+                    </div>     
+                     
+                    <!--[if mso]>
+                    </td>
+                    </tr>
+                    </table>
+                  <![endif]-->
+                             <!--[if true]><br>&nbsp; <![endif]-->     
+                  </div>      
+        
+                        
+                        
+                        
+ 
+                  
+                        
+                        
+
+
     
+<!-- 
+                   white space break
+                  <div class="spacer" height="24" style=" background-color: #d9dbc3;height: 24px; line-height:44px;mso-line-height-rule: exactly;">&nbsp;</div>
 
-                   <!-- white space break -->
-                  <div class="spacer" style=" background-color: #d9dbc3;height: 25px; line-height:25px;mso-line-height-rule: exactly;">&nbsp;</div>
-
-
+                                 -->
+               <!-- white space break -->
+                   
+              <table bgcolor="#d9dbc3" border="0" width="100%" cellpadding="0" cellspacing="0" role="presentation" bgcolor="#d9dbc3" style="background-color: #d9dbc3; ">
+                <tr>
+                  <td bgcolor="#d9dbc3" height="25" style="mso-shader:#0D051C; line-height:25px;mso-line-height-rule:exactly;border:none;">
+                    &nbsp;
+                  </td>
+                </tr>
+              </table>
               
 
                   <!-- single column button shop for new arrivals -->
                   <table class="darkmode-background" bgcolor="#d9dbc3" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
                     <tr>
-                      <td align="center" style=" text-align: center; text-align: center;" width="600" height="auto">
+                      <td align="center" style=" text-align: center; text-align: center;mso-padding-bottom-alt: 35px;" width="600" height="auto">
                         <p style="align-items: center; ">
+                                 <!--[if mso]>
+                              <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" 
+                                href="http://www.https://visit.arima-onsen.com/"
+                                style="height:60px;v-text-anchor:middle;width:280px;mso-ansi-font-size:35px;" 
+                                arcsize="8%" 
+                                stroke="f" 
+
+                                fillcolor="#130909">
+                              <w:anchorlock/>
+                              <center>
+                            <![endif]-->
                           <a class="darkmode-button" href=" #" target="_blank"
-                          style="font-size: 14px; text-transform: uppercase; border-radius: 35px; color: white; background-color: #130909;padding: 20px 35px; text-decoration: none;  letter-spacing: 1px; font-family: Raleway, sans-serif; font-weight: bold;">Shop new arrivals
+                          style="font-size: 14px;mso-ansi-font-size:18px; text-transform: uppercase; border-radius: 35px; color: white; background-color: #130909;padding: 20px 35px; text-decoration: none;  letter-spacing: 1px; font-family: Raleway, sans-serif; font-weight: bold;">Shop new arrivals
                           </a>
+                            <!--[if mso]>
+                              </center>
+                            </v:roundrect>
+                            <![endif]-->
                         </p>
                       </td>
                     </tr>
@@ -729,67 +874,55 @@
 
                     
                    <!-- white space break -->
-                  <div class="spacer"  style="background-color: #d9dbc3; height: 55px; mso-line-height-rule: exactly; ">&nbsp;</div>
+                  <div class="spacer"  height="55" style="background-color: #d9dbc3; height: 55px; mso-line-height-rule: exactly;">&nbsp;</div>
 
-
-
-
-
-                
-
-
-
-         
 
 
 
             
                     <!-- white space break -->
-                    <div class="spacer" style="background-color: #2D313F;line-height: 40px; height: 40px; mso-line-height-rule: exactly;">&nbsp;</div>
+                    <div class="spacer" height="40" style="background-color: #2D313F;line-height: 40px; height: 40px; mso-line-height-rule: exactly;">&nbsp;</div>
 
-
+									
+						
            
                     <!-- 3 column footer -->
                     <div align="center" class="three-col" style="background-color: #2D313F ;text-align: center; font-size:0 "> <!-- font size 0 so that column can sit side by side -->
                       <!--[if mso]>
-                        <table role="presentation" width="100%">
+                        <table role="presentation" width="100%" style="background-color: #2D313F;text-align:center;" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0;">
                         <tr>
                         <td style="width:30%; padding: 10px;background-color: #2D313F;" valign="top">
                       <![endif]-->
-                      <div width="160" class="column" style=" max-width: 160px; display:inline-block; vertical-align:top;">
-                        <div class="border-none"  style="max-width: 160px; padding-left:10px;padding-right:15px; line-height:14px; border-right: 1px solid #575965;">
-                          <p>
+                      <div  width="26%" class="column" style="display:inline-block; vertical-align:top; margin:10px">
+                        <div align="center"class="border-none"  style="width:90%;padding:10px; line-height:14px; border-right: 1px solid #575965;">
+                          <p align="center">
                             <img class="content" src="https://i.ibb.co/Q8mnS59/icons8-sustainability-50.png" alt="side-1-resized" border="0" style="width: 30px; display: inline-block; align-items: center;padding-bottom:0px;margin-bottom: 0px;" width="30" height="auto">
                           </p>
                           <p align="center" style="font-size: 11px; color: #ffffff;   padding-top: 1px;  border: 0; font-family: Raleway, sans-serif">
-                            SUSTAINABLE FASHION<br>FOR ALL
+                             SUSTAINABLE FASHION FOR ALL
+                          
                           </p>
-                          <p align="center" style="font-size: 9px; color: #ffffff; border: 0;font-family: Raleway, sans-serif; text-align: center; padding-bottom:5px;">
-                            We believe quality products can
-                            elevate your life. Especially when they're eco-friendly and
-                            affordably priced.
+                          <p align="center" class="paragraph-width" style="display:inline-block;color: #ffffff; border: 0;font-family: Raleway, sans-serif; text-align: center; padding-bottom:5px;font-size: 10px; line-height:18px;margin:0;word-break: break-word">
+                           We believe quality products can elevate your life. 
                           </p>
                         </div>
-                      </div>      
+                      </div>    
                       <!--[if mso]>
                         </td>
                         <td style="width:30%;padding: 10px;" valign="top">
                       <![endif]-->
-                      <div width="160" class="column" style=" max-width: 160px; display:inline-block; vertical-align:top;">
-                        <div class="border-none" style="max-width: 160px; padding-left:10px;padding-right:15px; line-height:14px; border-right: 1px solid #575965;">
-                          <p>
+                      <div  width="26%" class="column" style="display:inline-block; vertical-align:top; margin:10px">
+                        <div align="center"class="border-none"  style="width:90%;padding:10px; line-height:14px; border-right: 1px solid #575965;">
+                          <p align="center">
                             <img class="content" src="https://i.ibb.co/ZNztYRK/icons8-shipping-50.png" alt="side-1-resized" border="0" style="width: 30px; display: inline-block; align-items: center;padding-bottom:0px;margin-bottom: 0px;" width="30" height="auto">
                           </p>
                           <p align="center" style="font-size: 11px; color: #ffffff;   padding-top: 1px;  border: 0; font-family: Raleway, sans-serif">
-                            FREE SHIPPING & <br>
+                            FREE SHIPPING & 
                             90-DAY RETURNS
                           
                           </p>
-                          <p align="center" style="font-size: 9px; color: #ffffff; border: 0;font-family: Raleway, sans-serif; text-align: center; padding-bottom:5px;">
-                            Forget the shipping fees. Delivery
-                            is on us. Not feeling it? No worries!
-                            Returns are free and easy, and you
-                            have a full year to decide.
+                          <p align="center" class="paragraph-width" style="display:inline-block;color: #ffffff; border: 0;font-family: Raleway, sans-serif; text-align: center; padding-bottom:5px;font-size: 10px; line-height:18px;margin:0;word-break: break-word">
+                            Forget the shipping fees. <br>Delivery is on us. 
                           </p>
                         </div>
                       </div>
@@ -797,16 +930,16 @@
                         </td>
                         <td style="width:30%;padding: 10px;" valign="top">
                       <![endif]-->
-                      <div width="160" class="column" style=" max-width: 160px; display:inline-block; vertical-align:top;">
-                        <div style="max-width: 160px; padding-left:10px;padding-right:15px; line-height:14px; ">
-                          <p>
+                      <div  width="26%" class="column" style="display:inline-block; vertical-align:top; margin:10px">
+                        <div align="center"class="border-none"  style="width:90%;padding:10px;line-height:14px;">
+                          <p align="center">
                             <img class="content" src="https://i.ibb.co/xh6ZY5w/icons8-money-50.png" alt="side-1-resized" border="0" style="width: 30px; display: inline-block; align-items: center;padding-bottom:0px;margin-bottom: 0px;" width="30" height="auto">
                           </p>
                           <p align="center" style="font-size: 11px; color: #ffffff;   padding-top: 1px;  border: 0; font-family: Raleway, sans-serif">
                             $30 REFERRAL REWARD
                           </p>
-                          <p align="center" style="font-size: 9px; color: #ffffff; border: 0;font-family: Raleway, sans-serif; text-align: center; padding-bottom:5px;padding-top: 12px;">
-                            Share the love by referring a friend. When they make their first purchase, you’ll both get $30.
+                          <p align="center" class="paragraph-width" style="display:inline-block;color: #ffffff; border: 0;font-family: Raleway, sans-serif; text-align: center; padding-bottom:5px;font-size: 10px; line-height:18px;margin:0;word-break: break-word;">
+                            Share the love by referring a friend. 
                           </p>
                         </div>
                       </div>
@@ -815,121 +948,178 @@
                         </tr>
                         </table>
                       <![endif]-->
+                                            <!--[if true]><br style="background-color:#d9dbc3;">&nbsp; <![endif]-->     
                     </div>
-
-                    <!-- Single Column Social Media Icons  -->
-                    <table 
-                    align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" class="responsive-table" bgcolor="#2D313F">
-                        <tr>
-                          <td align="center">
-                              <p style=" margin-bottom:20px;color: #ffffff;">care@chicestate.com</p>
-                              <a href="#" target="_blank" style="color: #ffffff"> 
-                                <img src="https://i.ibb.co/XLh7bhY/icons8-facebook-50.png" alt="facebook" border="0" alt="" style="Margin:0; height: 25px; width: 25px; margin-bottom: 20px; margin-right: 5px;"/>
-                              </a>
-                              <a href="#" target="_blank"> 
-                                <img src="https://i.ibb.co/qDWwLW6/icons8-instagram-50-1.png" alt="instagram" style="Margin:0; height: 25px; width: 25px; margin-bottom: 20px;"/>
-                              </a>
-                          </td>
-                        </tr> 
-                    </table>
+                        
+                        
+                        
+    <!-- white space break -->
+                    <div class="spacer" height="20" style="background-color: #2D313F;line-height: 40px; height: 20px; mso-line-height-rule: exactly;">&nbsp;</div>
                             
+								
+                     <div align="center" width="100%"id="social-media" bgcolor="#2D313F" style="text-align:center;width:100%;;display:inline-block;vertical-align:bottom;margin: 0 auto; text-align: center;background-color:#2D313F" >
+										<!--[if (gte mso 9)|(IE)]>
+										<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0" style="border-spacing:0;font-family:sans-serif, 'Roboto'; text-align:center; mso-margin-alt: auto;background-color:#2D313F" >
+										<tr>
+										<td  valign="top" style="width:30%;mso-padding-top-alt;0;mso-padding-bottom-alt:0;mso-padding-right-alt:0;mso-padding-left-alt:0;" >
+										<![endif]-->					
+            				 <table bgcolor="#2D313F" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" style="max-width:120px;text-align:center;border-spacing:0;font-family:sans-serif, 'Roboto';background-color:#2D313F;margin:auto;" >
+												<tr>
+													<td align="center" class="padding-20" style="padding-top:20px;padding-bottom:20px;padding-right:20px;padding-left:20px;" >
+														<table align="center" class="contents" border="0" cellpadding="0" cellspacing="0" style="text-align:center;border-spacing:0;font-family:sans-serif, 'Roboto';width:100%;min-width:100%;font-size:14px;text-align:left;" >
+															<tr>
+																<td style="text-align:center;padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+																	<table align="center" width="70" border="0" cellspacing="0" cellpadding="0" style="border-spacing:0;font-family:sans-serif, 'Roboto';text-align:center;" >
+																		<tr>
+																			<td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;mso-padding-right-alt:4px;" >
+                                        <img src="https://i.ibb.co/XLh7bhY/icons8-facebook-50.png" width="30" height="30" alt="Facebook" style="border-width:0;height:auto;max-width:30px;width:30px;" />
+																			</td>
+																		<td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;mso-padding-left-alt:4px;" >
+                                        <img src="https://i.ibb.co/qDWwLW6/icons8-instagram-50-1.png" width="30" height="30" alt="Facebook" style="border-width:0;height:auto;max-width:30px;width:30px;" />
+																			</td>						
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+                       	</table>
+                         <!--[if true]><br>&nbsp; <![endif]-->
+                    <!--[if (gte mso 9)|(IE)]>
+										</td>
+										</tr>
+										</table>
+										<![endif]-->
+										</div>
 
-
-                    <!-- white space break -->
-                    <div class="spacer" style="background-color: #2D313F;line-height: 20px; height: 20px; mso-line-height-rule: exactly;">&nbsp;</div>
 
 
 
                     <!-- Single Column Footer  -->
-                    <table 
-                    align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" class="responsive-table" bgcolor="#2D313F">
+            
+                    <table style="background-color:#2D313F;" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%" bgcolor="#2D313F" >
                       <tr>
-                        <td align="center">
-                          <p style="Margin:0; font-size: 11px; color:#ffffff; font-family: 'Raleway', sans-serif; letter-spacing: 1px; padding-bottom: 15px; padding-top:15px;text-transform: uppercase;border-bottom: 1px solid #575965;border-top: 1px solid #575965">
-                            <a href="#" target="_blank" style="color: #ffffff; text-decoration: none; line-height: 20px; font-weight: 500;">back in stock
+                        <td>
+                          	
+                          <table align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" width="100%">
+                               <tr>
+                        <td align="center" style="background-color:#2D313F;max-width:100%;<!-- border-bottom: 1px solid #575965; --> padding-bottom: 14px; padding-top:14px;">
+                          <p style="Margin:0; font-size: 12px; color:#ffffff; font-family: 'Raleway', sans-serif; letter-spacing: 1px;text-transform: uppercase;">
+                            <a href="#" target="_blank" style="color: #ffffff; text-decoration: none; font-weight: 500;">back in stock
                           </a>
                         </p>
                         </td>
                       </tr>
                         <tr>
-                          <td align="center">
-                            <p style="Margin:0; font-size: 11px; color:#ffffff; font-family: 'Raleway', sans-serif; letter-spacing: 1px; padding-bottom: 15px; padding-top:15px;text-transform: uppercase;border-bottom: 1px solid #575965">
-                              <a href="#" target="_blank" style="color: #ffffff; text-decoration: none; line-height: 20px; font-weight: 500;">best sellers
+                          <td align="center" class="border-bottom" style="background-color:#2D313F;max-width:100%;<!-- border-bottom: 1px solid #575965; --> padding-bottom: 14px; padding-top:14px;" >
+                            <p style="Margin:0; font-size: 12px; color:#ffffff; font-family: 'Raleway', sans-serif; letter-spacing: 1px;text-transform: uppercase;">
+                              <a href="#" target="_blank" style="color: #ffffff; text-decoration: none;  font-weight: 500;">best sellers
                             </a>
                           </p>
                           </td>
+                    
                         </tr>
                         <tr>
-                          <td align="center">
-                            <p style="Margin:0; font-size: 11px; color:#ffffff; font-family: 'Raleway', sans-serif; letter-spacing: 1px; padding-bottom: 15px; padding-top:15px;text-transform: uppercase;border-bottom: 1px solid #575965">
-                              <a href="#" target="_blank" style="color: #ffffff; text-decoration: none; line-height: 20px; font-weight: 500;">new arrivals
+                          <td align="center" style=" background-color:#2D313F;max-width:100%;<!-- border-bottom: 1px solid #575965; --> padding-bottom: 14px; padding-top:14px; ">
+                            <p style="Margin:0; font-size: 12px; color:#ffffff; font-family: 'Raleway', sans-serif; letter-spacing: 1px; text-transform: uppercase;">
+                              <a href="#" target="_blank" style="color: #ffffff; text-decoration: none;  font-weight: 500;">new arrivals
                             </a>
                           </p>
                           </td>
                         </tr>
+                        <!--     <tr>
+                              <td style="line-height:0px; mso-line-height:exactly;">&nbsp;</td>
+                            </tr>
+                               -->
+                          </table>
+                          
+                        </td>
+                      </tr>
+                     
                     </table>
-    
+
         
 
-                       
-                    <!-- 2 column footer bottom layout-->
-                <div align="center" class="two-col" style="background-color: #2D313F ;text-align: center; font-size:0; vertical-align:middle; padding-top: 45px;padding-bottom: 45px;"> <!-- font size 0 so that column can sit side by side -->
-                      <!--[if mso]>
-                        <table role="presentation" width="100%">
-                        <tr>
-                        <td style="width:50%; padding: 10px;" valign="middle">
-                      <![endif]-->
-                      <div align="center" width="300" class="column footer-left" style=" max-width: 280; display:inline-block; vertical-align:middle;">
-                        <div  align="center" style="width:100%; line-height:14px; text-align: center; ">
-                          <p style="color: #ffffff;font-size: 32px; text-align: center;font-family: Playfair Display, serif; font-style:italic;">
-                            <a href="#" target="_blank" style="color: #ffffff;">Chic Estate</a>
-                          </p>
-                        </div>
-                      </div>      
-                      <!--[if mso]>
-                        </td>
-                        <td style="width:50%;padding: 10px;" valign="middle">
-                      <![endif]-->
-                      <div align="center" width="300" class="column footer-right" style=" max-width: 280px; display:inline-block; vertical-align:middle;">
-                        <div align="center" style="width: 100%;line-height:5px; text-align: center; ">
-                          <a href="#">
-                            <p align="center" style="font-size: 10px; color: #ffffff;   padding-top: 1px;  border: 0; font-family: Arial, sans-serif">
-                              200 Crows Road, New York, NY 10001
-                            </p>
-                          </a>
-                          <a href="#">
-                            <p align="center" style="font-size: 10px; color: #ffffff;   padding-top: 1px;  border: 0; font-family: Arial, sans-serif">
-                              Privacy Policy | Terms & Conditions
-                            </p>
-                          </a>
-                          <a href="#">
-                            <p align="center" style="font-size: 10px; color: #ffffff;   padding-top: 1px;  border: 0; font-family: Arial, sans-serif">
-                              View this email on the web
-                            </p>
-                          </a>
-                          <a href="#">
-                            <p align="center" style="font-size: 10px; color: #ffffff;   padding-top: 1px;  border: 0; font-family: Arial, sans-serif">
-                              Unsubscribe
-                            </p>
-                          </a>
-                        </div>
-                      </div>   
-                
-                
-
+             				 <!-- white space break -->
+                    <div class="spacer" height="20" style="background-color: #2D313F;line-height: 30px; height: 20px; mso-line-height-rule: exactly;">&nbsp;</div>
+                        
+                        
+                        
                     
-                      <!--[if mso]>
-                      </td>
-                      </tr>
-                      </table>
-                    <![endif]-->
-                    </div>
+           
+                    
+                        
+                             <!-- 2 Column Testing v2-->
+                        <div class="two-col" style="font-size:0; text-align:center; padding-top:10px;background-color: #2D313F ;color:#fff;">
+                        <!--[if mso]>
+                        <table role="presentation" width="100%" style="text-align:center;background-color: #2D313F ;color:#fff;mso-padding-bottom-alt:30px;"
+                          <tr>
+                          <td style="width:48%;padding:10px" valign="middle">
+                        <![endif]-->
+                          <div width="48%" class="column" style="display:inline-block; vertical-align:middle;padding:10px;">
+                            <div style="width:90%; text-align: center; padding: 10px; font-size: 14px;line-height: 18px; vertical-align: middle;">
+                              <p style="color:;font-size: 32px; text-align: center;font-family: Playfair Display, serif; font-style:italic; margin: 0;">Chic Estate</p>
+                            </div>
+                          </div>
+                          <!--[if mso]>
+                          </td>
+                          <td style="width:48%;padding:10px;height:30px;mso-margin-top-alt: 0px;mso-padding-top-alt:30px;" valign="middle">
+                          <![endif]-->
+                          <div  class="column" style="display:inline-block; vertical-align:middle;padding:10px;mso-padding-bottom-alt:30px;">
+                            <div style="width:90%; text-align: center; padding: 20px; font-size: 14px;line-height: 18px;height:100px; vertical-align: middle;">
+                              <table role="presentation" style="color:#fff;width:100%;border:0;border-spacing:0;mso-table-lspace:0px;mso-table-rspace:0px; mso-margin-alt: 0px; height: 30px;padding-top:10px">
+                                <tr>
+                                  <td style="text-align:center; mso-margin-top-alt: 0px; width: 100%;mso-line-height-rule:2px;color:#fff;">
+                                    <a href="#" style="text-decoration:none; color: black;">
+                                    <p style="font-size: 12px;  border: 0;  margin:0; font-family: Arial, sans-serif;mso-line-height-rule:5px;color:#fff;">
+                                       200 Crows Road, New York, NY 10001 </p>
+                                    </a>
+                                    <a href="#" style="text-decoration:none; color: black;">
+                                    <p align="center" style="font-size: 12px;   border: 0; margin:0; font-family: Arial, sans-serif;mso-line-height-rule:5px;color:#fff;">
+                                      Privacy Policy | Terms & Conditions
+                                    </p>
+                                    </a>
+                                    <a href="#" style="text-decoration:none; color: black;">
+                                    <p align="center" style="font-size: 12px;   border: 0; margin:0; font-family: Arial, sans-serif;mso-line-height-rule:exactly;color:#fff;">
+                                      View this email on the web
+                                    </p>
+                                    </a>
+                                    <a href="#" style="text-decoration:none; color: black;">
+                                    <p align="center" style="font-size: 12px;   border: 0; margin:0; font-family: Arial, sans-serif;mso-padding-bottom-alt: 10px;color:#fff;">
+                                      Unsubscribe
+                                    </p>
+                                    </a>
+                                  </td>
+                                </tr>
+                                 <tr>
+                                    <td style="line-height:0px; mso-line-height:exactly;"></td>
+                                </tr> 
+                              </table>	
+                            </div>
+                          </div>
+                           <!--[if true]><br>&nbsp; <![endif]-->
+                       	<!--[if mso]>
+                            </td>
+                            </tr>
+                            </table>
+                          <![endif]-->
+                         
+                        </div>    
+                        
+                        
+                            
+                     <!-- white space break -->
+                    
+                <!--     <div class="spacer" height="20" style="background-color: #2D313F;line-height: 40px; height: 40px; mso-line-height-rule: exactly;">&nbsp;</div>      -->
+                        
+                        <!--[if true]><br>&nbsp; <![endif]-->
                     <!--[if mso]>
-                    </tr>
-                    </td>  
+                       </td>  
+											</tr>
                     </table>
                   <![endif]-->  
-                </td>
+              </td>
             </tr>
         </table>
     </div>
